@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="allerioPages.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+    <script src="https://kit.fontawesome.com/c15211b786.js"></script>
+    <title>Allerio Pages!</title>
+</head>
+
+<body>
+
+    <div class="nav-bar">
+    
+        <a href="allerioHome.html"><img class="allerio-logo" src="img/allerioLogo.png" height="100px" width="150px"></a>
+        
+        
+        <button class="menu-btn" onclick="openNav()">&#9776;</button>
+        
+        
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Food Safety / News</a>
+          <a href="#">Allerio App</a>
+          <a href="#">Search</a>
+          <a href="#">Scan History</a>
+          <a href="#">Shopping</a>
+          <a href="#">Explore</a>
+          <a href="#">Community</a>
+          <a href="#">About Us</a>
+          <a href="#">More</a>
+        </div>
+    
+    </div>
+    
+<script>
+function openNav() {
+  /*
+  document.getElementById("mySidenav").style.width = "300px";
+  
+  document.getElementById("mySidenav").style.display = "block";
+  */
+  document.getElementById("mySidenav").style.right = "0px";
+}
+
+function closeNav() {
+  /*
+  document.getElementById("mySidenav").style.width = "0";
+  
+  document.getElementById("mySidenav").style.display = "none";
+  */
+  document.getElementById("mySidenav").style.right = "-300px";
+}
+</script>
+
+</body>

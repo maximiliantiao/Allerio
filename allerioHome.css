@@ -1,0 +1,544 @@
+html {
+  overflow: auto;
+}
+
+a {
+    outline: 0;
+    outline-style: none;
+    text-decoration: none;
+}
+
+/* Mobile Styles (bigger than iPhone 6)*/
+@media only screen and (max-width: 501px) and (min-width: 400px) {
+    
+  .headers {
+    text-align: center;
+    margin-top: 75px;
+  }
+  .welcome-msg {
+    text-align: center;
+    animation: opacity-appear 2s linear 1;
+  }
+  img {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -45px;
+    margin-top: -45px;
+    z-index: -2;
+    animation: opacity-appear 2s linear 1;
+  }
+  .box {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .circle .box:nth-child(1) {
+    position: absolute;
+    background-color: #FFADAE;
+    transform: rotate(320deg) translate(130px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(2) {
+    position: absolute;
+    background-color: #FFCE99;
+    transform: rotate(280deg) translate(130px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(3) {
+    position: absolute;
+    background-color: #FFF7A2;
+    transform: rotate(240deg) translate(130px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(4) {
+    position: absolute;
+    background-color: #DDFFA9;
+    transform: rotate(200deg) translate(130px); 
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(5) {
+    position: absolute;
+    background-color: #C9FFF1;
+    transform: rotate(160deg) translate(130px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(6) {
+    position: absolute;
+    background-color: #C2E8FB;
+    transform: rotate(120deg) translate(130px); 
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(7) {
+    position: absolute;
+    background-color: #CADAFE;
+    transform: rotate(80deg) translate(130px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(8) {
+    position: absolute;
+    background-color: #D9BDED;
+    transform: rotate(40deg) translate(130px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(9) {
+    position: absolute;
+    background-color: #FEB2D0;
+    transform: rotate(0deg) translate(130px);
+    animation: opacity-appear 2s linear 1;
+  }
+  #overlay-red, #overlay-orange, #overlay-yellow, #overlay-golden, #overlay-lightGreen, #overlay-lightBlue, #overlay-lavender, #overlay-violet, #overlay-pink {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page)   */
+    height: 100%; /* Full height (cover the whole page)   */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black   background with opacity */
+    z-index: 2; /* Specify a stack order in case you're   using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    animation: opacity-appear 0.3s linear 1;
+  }
+  .overlay-text {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    transform: translateY(50%);
+  }
+  .close-overlay {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    margin-right: 20px;
+    border: none;
+    color: black;
+    font-size: 50px;
+    background-color: transparent;
+  }
+  button:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+/* Mobile Styles (smaller than iPhone 6)*/
+@media only screen and (max-width: 399px) {
+  .headers {
+    text-align: center;
+    padding-top: 75px;
+    font-size: 30px;
+  }
+  .welcome-msg {
+    text-align: center;
+    font-size: 30px;
+    animation: opacity-appear 2s linear 1;
+  }
+  img {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -35px;
+    margin-top: -35px;
+    z-index: -2;   
+    animation: opacity-appear 2s linear 1;
+  }
+  .box {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+  }
+  .circle .box:nth-child(1) {
+    position: absolute;
+    background-color: #FFADAE;
+    transform: rotate(320deg) translate(100px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(2) {
+    position: absolute;
+    background-color: #FFCE99;
+    transform: rotate(280deg) translate(100px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(3) {
+    position: absolute;
+    background-color: #FFF7A2;
+    transform: rotate(240deg) translate(100px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(4) {
+    position: absolute;
+    background-color: #DDFFA9;
+    transform: rotate(200deg) translate(100px); 
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(5) {
+    position: absolute;
+    background-color: #C9FFF1;
+    transform: rotate(160deg) translate(100px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(6) {
+    position: absolute;
+    background-color: #C2E8FB;
+    transform: rotate(120deg) translate(100px); 
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(7) {
+    position: absolute;
+    background-color: #CADAFE;
+    transform: rotate(80deg) translate(100px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(8) {
+    position: absolute;
+    background-color: #D9BDED;
+    transform: rotate(40deg) translate(100px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(9) {
+    position: absolute;
+    background-color: #FEB2D0;
+    transform: rotate(0deg) translate(100px);
+    animation: opacity-appear 2s linear 1;
+  }
+  #overlay-red, #overlay-orange, #overlay-yellow, #overlay-golden, #overlay-lightGreen, #overlay-lightBlue, #overlay-lavender, #overlay-violet, #overlay-pink {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page)   */
+    height: 100%; /* Full height (cover the whole page)   */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black   background with opacity */
+    z-index: 2; /* Specify a stack order in case you're   using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    animation: opacity-appear 0.3s linear 1;
+  }
+  .overlay-text {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    transform: translateY(50%);
+  }
+  .close-overlay {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    margin-right: 20px;
+    border: none;
+    color: black;
+    font-size: 50px;
+    background-color: transparent;
+  }
+  button:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 1050px) and (min-width: 501px) {
+    
+  .headers {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 75px;
+  } 
+  .welcome-msg {
+    text-align: center;
+    font-size: 50px;
+    animation: opacity-appear 2s linear 1;
+  }
+  img {
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -65px;
+    margin-top: -65px;
+    z-index: -2;
+    animation: opacity-appear 2s linear 1;
+    }
+  .box {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-left: -35px;
+    margin-top: -35px;
+  }
+  .circle .box:nth-child(1) {
+    position: absolute;
+    background-color: #FFADAE;
+    transform: rotate(320deg) translate(200px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(2) {
+    position: absolute;
+    background-color: #FFCE99;
+    transform: rotate(280deg) translate(200px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(3) {
+    position: absolute;
+    background-color: #FFF7A2;
+    transform: rotate(240deg) translate(200px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(4) {
+    position: absolute;
+    background-color: #DDFFA9;
+    transform: rotate(200deg) translate(200px); 
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(5) {
+    position: absolute;
+    background-color: #C9FFF1;
+    transform: rotate(160deg) translate(200px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(6) {
+    position: absolute;
+    background-color: #C2E8FB;
+    transform: rotate(120deg) translate(200px); 
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(7) {
+    position: absolute;
+    background-color: #CADAFE;
+    transform: rotate(80deg) translate(200px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(8) {
+    position: absolute;
+    background-color: #D9BDED;
+    transform: rotate(40deg) translate(200px);
+    animation: opacity-appear 2s linear 1;
+  }
+  .circle .box:nth-child(9) {
+    position: absolute;
+    background-color: #FEB2D0;
+    transform: rotate(0deg) translate(200px);
+    animation: opacity-appear 2s linear 1;
+  }
+  #overlay-red, #overlay-orange, #overlay-yellow, #overlay-golden, #overlay-lightGreen, #overlay-lightBlue, #overlay-lavender, #overlay-violet, #overlay-pink {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page)   */
+    height: 100%; /* Full height (cover the whole page)   */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black   background with opacity */
+    z-index: 2; /* Specify a stack order in case you're   using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    animation: opacity-appear 0.3s linear 1;
+  }
+  .overlay-text {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    transform: translateY(50%);
+  }
+  .close-overlay {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    margin-right: 20px;
+    border: none;
+    color: black;
+    font-size: 70px;
+    background-color: transparent;
+  }
+  button:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1051px) {
+    .headers {
+    text-align: center;
+    margin-top: 75px;
+    font-size: 50px;
+    }
+    .redTitle .orangeTitle{
+      margin-right: 100px;
+      margin-left: 100px;
+    }
+
+    p { 
+      font-size: 25px;
+      margin-right: 100px;
+      margin-left: 100px;
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    .centerWebsite {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    .welcome-msg {
+      text-align: center;
+      font-size: 50px;
+      top: auto;
+      animation: opacity-appear 2s linear 1;
+    }
+
+    img {
+      height: 130px;
+      width: 130px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -65px;
+      margin-top: -65px;
+      max-width: 100%;
+      z-index: -2;
+      animation: opacity-appear 2s linear 1;
+    }
+
+    .box {
+      width: 70px;
+      height: 70px;
+      position: fixed;
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      margin-left: -35px;
+      margin-top: -35px;
+      animation: opacity-appear 2s linear 1;
+    }
+
+    .circle .box:nth-child(1) {
+      background-color: #FFADAE;
+      transform: rotate(320deg) translate(200px);
+      animation: opacity-appear 2s linear 1;
+    }
+    .circle .box:nth-child(2) {
+      z-index: 2;
+      background-color: #FFCE99;
+      transform: rotate(280deg) translate(200px);
+      animation: opacity-appear 2s linear 1;
+    }
+    .circle .box:nth-child(3) {
+      background-color: #FFF7A2;
+      transform: rotate(240deg) translate(200px);
+      animation: opacity-appear 2s linear 1;
+    }
+    .circle .box:nth-child(4) {
+      background-color: #DDFFA9;
+      transform: rotate(200deg) translate(200px);
+      animation: opacity-appear 2s linear 1;
+    }
+    .circle .box:nth-child(5) {
+      background-color: #C9FFF1;
+      transform: rotate(160deg) translate(200px);
+      animation: opacity-appear 2s linear 1;
+    }
+    .circle .box:nth-child(6) {
+      background-color: #C2E8FB;
+      transform: rotate(120deg) translate(200px);
+      animation: opacity-appear 2s linear 1;
+    }
+    .circle .box:nth-child(7) {
+      background-color: #CADAFE;
+      transform: rotate(80deg) translate(200px);
+      animation: opacity-appear 2s linear 1;
+    }
+    .circle .box:nth-child(8) {
+      background-color: #D9BDED;
+      transform: rotate(40deg) translate(200px);
+      animation: opacity-appear 2s linear 1;
+    }
+    .circle .box:nth-child(9) {
+      background-color: #FEB2D0;
+      transform: rotate(0deg) translate(200px);
+      animation: opacity-appear 2s linear 1;
+    }
+    #overlay-red, #overlay-orange, #overlay-yellow, #overlay-golden, #overlay-lightGreen, #overlay-lightBlue, #overlay-lavender, #overlay-violet, #overlay-pink {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page)   */
+    height: 100%; /* Full height (cover the whole page)   */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black   background with opacity */
+    z-index: 2; /* Specify a stack order in case you're   using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    animation: opacity-appear 0.3s linear 1;
+  }
+  .overlay-text {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    transform: translateY(50%);
+  }
+  .close-overlay {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px;
+    margin-right: 20px;
+    border: none;
+    color: black;
+    font-size: 50px;
+    background-color: transparent;
+  }
+  button:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+@keyframes opacity-appear {
+    0% {
+      opacity: 0;  
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+    
+}

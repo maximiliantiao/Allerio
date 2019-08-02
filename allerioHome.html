@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="allerioHome.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <head>
+        <script src="https://kit.fontawesome.com/c15211b786.js"></script>
+        <title>Animations!</title>
+    </head>
+    <body>
+    <div>
+          
+      <div id="home-page">  
+        <img src="img/allerioA.png"/>
+      </div>
+      <div class="circle centerWebsite">
+        <button href="#" id="red" class="box" onclick="on()"></button>
+        <button href="#" id="orange" class="box" onclick="on()"></button>
+        <button href="#" id="yellow" class="box" onclick="on()"></button>
+        <button href="#" id="golden" class="box" onclick="on()"></button>
+        <button href="#" id="light-green" class="box" onclick="on()"></button>
+        <button href="#" id="light-blue" class="box" onclick="on()"></button>
+        <button href="#" id="lavender" class="box" onclick="on()"></button>
+        <button href="#" id="violet" class="box" onclick="on()"></button>
+        <button href="#" id="pink" class="box" onclick="on()"></button>  
+      </div>
+        
+      <h1 class="welcome-msg">
+        Welcome to Allerio  
+      </h1> 
+      
+    </div>
+        
+    <div id="overlay-red">
+        <button class="close-overlay" onclick="off()">&#10005;</button>
+        <h1 class="headers">Food Safety / News</h1>
+        <div class="overlay-text">
+            <a href="./allerioPages.html">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+        </div>    
+    </div>
+    <div id="overlay-orange">
+        <button class="close-overlay" onclick="off()">&#10005;</button>
+        <h1 class="headers">Allerio App</h1>
+        <div class="overlay-text">
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+        </div>      
+    </div>
+    <div id="overlay-yellow">
+        <button class="close-overlay" onclick="off()">&#10005;</button>
+        <h1 class="headers">Search</h1>
+        <div class="overlay-text">
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+        </div>  
+    </div>
+    <div id="overlay-golden">
+        <button class="close-overlay" onclick="off()">&#10005;</button>
+        <h1 class="headers">Scan History</h1>
+        <div class="overlay-text">
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+        </div>      
+    </div>
+    <div id="overlay-lightGreen">
+        <button class="close-overlay" onclick="off()">&#10005;</button>
+        <h1 class="headers">Shopping</h1>
+        <div class="overlay-text">
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+        </div>  
+    </div>
+    <div id="overlay-lightBlue">
+        <button class="close-overlay" onclick="off()">&#10005;</button>
+        <h1 class="headers">Explore</h1>
+        <div class="overlay-text">
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+        </div> 
+    </div>
+    <div id="overlay-lavender">
+        <button class="close-overlay" onclick="off()">&#10005;</button>
+        <h1 class="headers">Community / Social</h1>
+        <div class="overlay-text">
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+        </div>     
+    </div>
+    <div id="overlay-violet">
+        <button class="close-overlay" onclick="off()">&#10005;</button>
+        <h1 class="headers">About Allerio</h1>
+        <div class="overlay-text">
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+        </div>     
+    </div>
+    <div id="overlay-pink">
+        <button class="close-overlay" onclick="off()">&#10005;</button>
+        <h1 class="headers">More Options</h1>
+        <div class="overlay-text">
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+            <a href="#">Sub-Categories</a>
+            <br>
+        </div> 
+    </div>
+    
+    <script>
+        
+      var redCircle = document.getElementById("red");
+      var orangeCircle = document.getElementById("orange");
+      var yellowCircle = document.getElementById("yellow");
+      var goldenCircle = document.getElementById("golden");
+      var lightGreenCircle = document.getElementById("light-green");
+      var lightBlueCircle = document.getElementById("light-blue");
+      var lavenderCircle = document.getElementById("lavender");
+      var violetCircle = document.getElementById("violet");
+      var pinkCircle = document.getElementById("pink");
+      
+      redCircle.addEventListener("click", function() {
+          document.getElementById("overlay-red").style.display = "block";
+          
+          document.getElementById("overlay-red").style.backgroundColor = "#FFADAE";
+      })
+      
+      orangeCircle.addEventListener("click", function() {
+          document.getElementById("overlay-orange").style.display = "block";
+          
+          document.getElementById("overlay-orange").style.backgroundColor = "#FFCE99";
+      })
+        
+      yellowCircle.addEventListener("click", function() {
+          document.getElementById("overlay-yellow").style.display = "block";
+          
+          document.getElementById("overlay-yellow").style.backgroundColor = "#FFF7A2";
+      })
+        
+      goldenCircle.addEventListener("click", function() {
+          document.getElementById("overlay-golden").style.display = "block";
+          
+          document.getElementById("overlay-golden").style.backgroundColor = "#DDFFA9";
+      })
+    
+      lightGreenCircle.addEventListener("click", function() {
+          document.getElementById("overlay-lightGreen").style.display = "block";
+          
+          document.getElementById("overlay-lightGreen").style.backgroundColor = "#C9FFF1";
+      })
+      
+      lightBlueCircle.addEventListener("click", function() {
+          document.getElementById("overlay-lightBlue").style.display = "block";
+          
+          document.getElementById("overlay-lightBlue").style.backgroundColor = "#C2E8FB";
+      })
+        
+      lavenderCircle.addEventListener("click", function() {
+          document.getElementById("overlay-lavender").style.display = "block";
+          
+          document.getElementById("overlay-lavender").style.backgroundColor = "#CADAFE";
+      })
+        
+      violetCircle.addEventListener("click", function() {
+          document.getElementById("overlay-violet").style.display = "block";
+          
+          document.getElementById("overlay-violet").style.backgroundColor = "#D9BDED";
+      })
+        
+      pinkCircle.addEventListener("click", function() {
+          document.getElementById("overlay-pink").style.display = "block";
+          
+          document.getElementById("overlay-pink").style.backgroundColor = "#FEB2D0";
+      })
+              
+      function off() {
+        document.getElementById("overlay-red").style.display = "none";
+          
+        document.getElementById("overlay-orange").style.display = "none";
+        
+        document.getElementById("overlay-yellow").style.display = "none";
+        
+        document.getElementById("overlay-golden").style.display = "none";
+          
+        document.getElementById("overlay-lightGreen").style.display = "none";
+          
+        document.getElementById("overlay-lightBlue").style.display = "none";
+        
+        document.getElementById("overlay-lavender").style.display = "none";
+        
+        document.getElementById("overlay-violet").style.display = "none";
+          
+        document.getElementById("overlay-pink").style.display = "none";
+      }
+      </script>
+    </body>
+
+</html>
