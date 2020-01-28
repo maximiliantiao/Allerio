@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=width, initial-scale=1">
+        <link rel="stylesheet" href="morePage.css">
+        <style>@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');</style>
+        <script src="https://kit.fontawesome.com/c15211b786.js"></script>
+        <title>Allerio Pages!</title>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+    </head>
+<body>
+    <div>
+        <div id="nav-bar">
+            <a href="home.html"><img class="allerio-logo" src="img/transparent_logo.png" height="100px" width="100px"></a>
+
+            <!--<button class="menu-btn" onclick="openNav()">&#9776;</button>-->
+            <div class="bento-positioning">
+                <div class="bento-menu" onclick="openNav()">
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                </div>
+            </div>
+        
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <li class="category" id="redOpt">
+                <a href="newsPage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-newspaper"></i>Food Safety / News</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesRed.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="orangeOpt">
+                <a href="appPage.html" class="dropdown-btn"><i id="iconsMenu" class="fab fa-app-store"></i>Allerio App</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesOrange.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="yellowOpt">
+                <a href="searchPage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-search"></i>Search</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesYellow.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="goldenOpt">
+                <a href="scanPage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-barcode"></i>Scan History</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesGolden.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="lightGreenOpt">
+                <a href="shoppingPage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-shopping-cart"></i>Shopping</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesLightGreen.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="lightBlueOpt">
+                <a href="explorePage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-binoculars"></i>Explore</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesLightBlue.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="lavenderOpt">
+                <a href="socialPage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-user-friends"></i>Community</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesLavender.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="violetOpt">
+                <a href="aboutPage.html" class="dropdown-btn"><i id="iconsMenu" class="far fa-address-card"></i>About Allerio</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesViolet.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="pinkOpt">
+                <a href="morePage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-search-plus"></i>More Options</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesPink.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+            
+            <div class="icon-bar">
+                <a href="https://www.facebook.com/alleriolife/" target="_blank" class="socialSite"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/alleriolife" target="_blank" class="socialSite"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/allerio/" target="_blank" class="socialSite"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            
+        </div>
+        
+
+        <div class="CategoryPink"></div>
+
+        <!--<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i></button>-->
+
+    </div>
+
+<script>
+
+document.addEventListener("touchstart", function(){}, true);
+
+function openNav() {
+  /*
+  document.getElementById("mySidenav").style.width = "300px";
+
+  document.getElementById("mySidenav").style.display = "block";
+  */
+  document.getElementById("mySidenav").style.right = "0px";
+  
+}
+
+function closeNav() {
+  /*
+  document.getElementById("mySidenav").style.width = "0";
+
+  document.getElementById("mySidenav").style.display = "none";
+  */
+  document.getElementById("mySidenav").style.right = "-350px";
+  
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+
+</body>
+</html>

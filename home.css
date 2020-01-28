@@ -1,0 +1,3029 @@
+/* iPhone 5+ and older PORTRAIT */
+@media only screen and (min-device-width: 200px) and (max-device-width: 329px) and (orientation: portrait) {
+    html {
+        overflow: auto;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        /*background: red;
+        /*
+        -webkit-animation: bgcolor 20s infinite;
+        animation: bgcolor 10s infinite;
+        animation-duration: 45s;
+        */
+    }
+    
+    button {
+        outline: none;
+        border: none;
+    }
+    
+    .headers {
+        text-align: center;
+        font-size: 20px;
+        /*
+        margin-top: 75px;*/
+    }
+    
+    a {
+        cursor: pointer;
+        outline: 0;
+        outline-style: none;
+        text-decoration: none;
+    }
+    
+    .centerWebsite {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1000;
+    }
+    
+    .welcome-msg {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 25px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 1000;
+    }
+    
+    .letterA {
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+        max-width: 100%;
+        z-index: 999;
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Inner-circles for sub-menu */
+    .redInner-dot, .orangeInner-dot, .yellowInner-dot, .goldenInner-dot, .lightGreenInner-dot, .lightBlueInner-dot, .lavenderInner-dot, .violetInner-dot, .pinkInner-dot {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -22.5px;
+        margin-top: -22.5px;
+        border: 3px solid black;
+        z-index: 4001;
+    }/*
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-5deg) translate(130px);
+    }*/
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-21deg) translate(85px);
+    }/*
+    .circle .redInner-dot:nth-of-type(3) {
+        background-color: #FFADAE;
+        transform: rotate(-35deg) translate(130px);
+    }
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-45deg) translate(130px);
+    }*/
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-61deg) translate(85px);
+    }/*
+    .circle .orangeInner-dot:nth-of-type(3) {
+        background-color: #FFCE99;
+        transform: rotate(-75deg) translate(130px);
+    }
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-85deg) translate(130px);
+    }*/
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-100.5deg) translate(87px);
+    }/*
+    .circle .yellowInner-dot:nth-of-type(3) {
+        background-color: #FFF7A2;
+        transform: rotate(-115deg) translate(130px);
+    }
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-125deg) translate(130px);
+    }*/
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-140deg) translate(88px);
+    }/*
+    .circle .goldenInner-dot:nth-of-type(3) {
+        background-color: #DDFFA9;
+        transform: rotate(-155deg) translate(130px);
+    }
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-165deg) translate(130px);
+    }*/
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-179deg) translate(88px);
+    }/*
+    .circle .lightGreenInner-dot:nth-of-type(3) {
+        background-color: #C9FFF1;
+        transform: rotate(-195deg) translate(130px);
+    }
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-205deg) translate(130px);
+    }*/
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-220deg) translate(86px);
+    }/*
+    .circle .lightBlueInner-dot:nth-of-type(3) {
+        background-color: #C2E8FB;
+        transform: rotate(-235deg) translate(130px);
+    }
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-245deg) translate(130px);
+    }*/
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-259deg) translate(84px);
+    }/*
+    .circle .lavenderInner-dot:nth-of-type(3) {
+        background-color: #CADAFE;
+        transform: rotate(-275deg) translate(130px);
+    }
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-285deg) translate(130px);
+    }*/
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-300deg) translate(84px);
+    }/*
+    .circle .violetInner-dot:nth-of-type(3) {
+        background-color: #D9BDED;
+        transform: rotate(-315deg) translate(130px);
+    }
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-325deg) translate(130px);
+    }*/
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-340deg) translate(83px);
+    }/*
+    .circle .pinkInner-dot:nth-of-type(3) {
+        background-color: #FEB2D0;
+        transform: rotate(-355deg) translate(130px);
+    }*/
+    
+    /* Outer Circle for Allerio Logo */
+    .dot {
+        width: 36px;
+        height: 36px;
+        position: fixed;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -18px;
+        margin-top: -18px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 4000;
+    }
+    .circle .dot:nth-child(1) {
+        background-color: #FFADAE;
+        transform: rotate(340deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(2) {
+        z-index: 2;
+        background-color: #FFCE99;
+        transform: rotate(300deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(3) {
+        background-color: #FFF7A2;
+        transform: rotate(260deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(4) {
+        background-color: #DDFFA9;
+        transform: rotate(220deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(5) {
+        background-color: #C9FFF1;
+        transform: rotate(180deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(6) {
+        background-color: #C2E8FB;
+        transform: rotate(140deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(7) {
+        background-color: #CADAFE;
+        transform: rotate(100deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(8) {
+        background-color: #D9BDED;
+        transform: rotate(60deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(9) {
+        background-color: #FEB2D0;
+        transform: rotate(20deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Overlay Settings */
+    #overlay-red, #overlay-orange, #overlay-yellow, #overlay-golden, #overlay-lightGreen, #overlay-lightBlue, #overlay-lavender, #overlay-violet, #overlay-pink {
+        position: absolute; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        width: 80px; /* Full width (cover the whole page)   */
+        height: 80px; /* Full height (cover the whole page)   */
+        top: 50%;
+        left: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+        z-index: 1000; /* Specify a stack order in case you're   using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        /*animation: opacity-appear 0.3s linear 1;*/
+        /*border: 1px solid black;*/
+        background: white;
+    }
+    #overlay-help {
+        display: none;
+        position: fixed;
+        width: 200px; 
+        height: 100px; 
+        bottom: 0px;
+        right: 75px;
+        z-index: 1000;
+        background: white;
+        border: 0.5px solid gray;
+        animation: opacity-appear 0.5s linear 1;
+    }
+    .overlay-text {
+        font-size: 32px;
+        color: black;
+        text-align: center;
+        transform: translateY(50%);
+    }
+    .overlay-text-help {
+        display: block;
+        font-size: 15px;
+        color: black;
+        padding: 10px;
+    }
+    .close-overlay {
+        position: relative;
+        float: right;
+        border: none;
+        color: black;
+        font-size: 25px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .social-media-twitter {
+        height: 39px;
+        width: 39px;
+        transform: translateX(1px) translateY(-2px);
+    }
+    .social-media-linkedin {
+        height: 34px;
+        width: 34px;
+        transform: translateY(-5px);
+    }
+    .fa-facebook {
+        color: #3B5998;
+        font-size: 30px;
+        transform: translateY(-10px);
+    }
+    .social-media-bar {
+        position: absolute;
+        bottom: 0%;
+    }
+    .icon-bar #social-media {
+        display: inline-block;
+        text-align: center;
+        padding: 30px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+    .fa-newspaper {
+        transform: rotate(21deg) translateX(-6px) translateY(-4px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-app-store {
+        transform: rotate(61deg) translateX(-18px) translateY(-4px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-search {
+        transform: rotate(100.5deg) translateX(-28px) translateY(3px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-barcode {
+        transform: rotate(140deg) translateX(-30px) translateY(16px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-shopping-cart {
+        transform: rotate(179deg) translateX(-30px) translateY(27px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-binoculars {
+        transform: rotate(219deg) translateX(-14px) translateY(30px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-user-friends {
+        transform: rotate(259deg) translateX(-5px) translateY(30px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-address-card {
+        transform: rotate(300deg) translateX(5px) translateY(18px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-search-plus {
+        transform: rotate(340deg) translateX(4px) translateY(5px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+}
+
+/* iPhone 6, 6s, 7, 8, X, XS PORTRAIT */
+@media (min-width: 330px) and (max-width: 375px) and (orientation: portrait) {
+    
+    html {
+        overflow: auto;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        /*background: orange;
+        /*
+        -webkit-animation: bgcolor 20s infinite;
+        animation: bgcolor 10s infinite;
+        animation-duration: 45s;
+        */
+    }
+    
+    button {
+        outline: none;
+        border: none;
+    }
+    
+    .headers {
+        text-align: center;
+        font-size: 25px;
+        /*
+        margin-top: 75px;*/
+    }
+    
+    a {
+        cursor: pointer;
+        outline: 0;
+        outline-style: none;
+        text-decoration: none;
+    }
+    
+    .centerWebsite {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1000;
+    }
+    
+    .welcome-msg {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 25px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 1000;
+    }
+    
+    .letterA {
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+        max-width: 100%;
+        z-index: 999;
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Inner-circles for sub-menu */
+    .redInner-dot, .orangeInner-dot, .yellowInner-dot, .goldenInner-dot, .lightGreenInner-dot, .lightBlueInner-dot, .lavenderInner-dot, .violetInner-dot, .pinkInner-dot {
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -27.5px;
+        margin-top: -27.5px;
+        border: 3px solid black;
+        z-index: 4001;
+    }/*
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-5deg) translate(145px);
+    }*/
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-21deg) translate(95px);
+    }/*
+    .circle .redInner-dot:nth-of-type(3) {
+        background-color: #FFADAE;
+        transform: rotate(-35deg) translate(145px);
+    }
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-45deg) translate(145px);
+    }*/
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-61deg) translate(95px);
+    }/*
+    .circle .orangeInner-dot:nth-of-type(3) {
+        background-color: #FFCE99;
+        transform: rotate(-75deg) translate(145px);
+    }
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-85deg) translate(145px);
+    }*/
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-100.5deg) translate(97px);
+    }/*
+    .circle .yellowInner-dot:nth-of-type(3) {
+        background-color: #FFF7A2;
+        transform: rotate(-115deg) translate(145px);
+    }
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-125deg) translate(145px);
+    }*/
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-140deg) translate(98px);
+    }/*
+    .circle .goldenInner-dot:nth-of-type(3) {
+        background-color: #DDFFA9;
+        transform: rotate(-155deg) translate(145px);
+    }
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-165deg) translate(145px);
+    }*/
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-179deg) translate(98px);
+    }/*
+    .circle .lightGreenInner-dot:nth-of-type(3) {
+        background-color: #C9FFF1;
+        transform: rotate(-195deg) translate(145px);
+    }
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-205deg) translate(145px);
+    }*/
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-219deg) translate(95px);
+    }/*
+    .circle .lightBlueInner-dot:nth-of-type(3) {
+        background-color: #C2E8FB;
+        transform: rotate(-235deg) translate(145px);
+    }
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-245deg) translate(145px);
+    }*/
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-259deg) translate(96px);
+    }/*
+    .circle .lavenderInner-dot:nth-of-type(3) {
+        background-color: #CADAFE;
+        transform: rotate(-275deg) translate(145px);
+    }
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-285deg) translate(145px);
+    }*/
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-300deg) translate(94px);
+    }/*
+    .circle .violetInner-dot:nth-of-type(3) {
+        background-color: #D9BDED;
+        transform: rotate(-315deg) translate(145px);
+    }
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-325deg) translate(145px);
+    }*/
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-340deg) translate(93px);
+    }/*
+    .circle .pinkInner-dot:nth-of-type(3) {
+        background-color: #FEB2D0;
+        transform: rotate(-355deg) translate(145px);
+    }*/
+    
+    /* Outer Circle for Allerio Logo */
+    .dot {
+        width: 44px;
+        height: 44px;
+        position: fixed;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -22px;
+        margin-top: -22px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 4000;
+    }
+    .circle .dot:nth-child(1) {
+        background-color: #FFADAE;
+        transform: rotate(340deg) translate(95px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(2) {
+        z-index: 2;
+        background-color: #FFCE99;
+        transform: rotate(300deg) translate(95px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(3) {
+        background-color: #FFF7A2;
+        transform: rotate(260deg) translate(95px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(4) {
+        background-color: #DDFFA9;
+        transform: rotate(220deg) translate(95px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(5) {
+        background-color: #C9FFF1;
+        transform: rotate(180deg) translate(95px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(6) {
+        background-color: #C2E8FB;
+        transform: rotate(140deg) translate(95px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(7) {
+        background-color: #CADAFE;
+        transform: rotate(100deg) translate(95px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(8) {
+        background-color: #D9BDED;
+        transform: rotate(60deg) translate(95px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(9) {
+        background-color: #FEB2D0;
+        transform: rotate(20deg) translate(95px);
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Overlay Settings */
+    #overlay-red, #overlay-orange, #overlay-yellow, #overlay-golden, #overlay-lightGreen, #overlay-lightBlue, #overlay-lavender, #overlay-violet, #overlay-pink {
+        position: absolute; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        width: 80px; /* Full width (cover the whole page)   */
+        height: 80px; /* Full height (cover the whole page)   */
+        top: 50%;
+        left: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+        z-index: 1000; /* Specify a stack order in case you're   using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        /*animation: opacity-appear 0.3s linear 1;*/
+        /*border: 1px solid black;*/
+        background: white;
+    }
+    #overlay-help {
+        display: none;
+        position: fixed;
+        width: 200px; 
+        height: 100px; 
+        bottom: 0px;
+        right: 75px;
+        z-index: 2000;
+        background: white;
+        border: 0.5px solid gray;
+        animation: opacity-appear 0.5s linear 1;
+    }
+    .overlay-text {
+        font-size: 30px;
+        color: black;
+        text-align: center;
+        transform: translateY(50%);
+    }
+    .overlay-text-help {
+        display: block;
+        font-size: 15px;
+        color: black;
+        padding: 10px;
+    }
+    .close-overlay {
+        position: relative;
+        float: right;
+        border: none;
+        color: black;
+        font-size: 25px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .social-media-twitter {
+        height: 39px;
+        width: 39px;
+        transform: translateX(1px) translateY(-2px);
+    }
+    .social-media-linkedin {
+        height: 34px;
+        width: 34px;
+        transform: translateY(-5px);
+    }
+    .fa-facebook {
+        color: #3B5998;
+        font-size: 30px;
+        transform: translateY(-10px);
+    }
+    .social-media-bar {
+        position: absolute;
+        bottom: 0%;
+    }
+    .icon-bar #social-media {
+        display: inline-block;
+        text-align: center;
+        padding: 30px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+    .fa-newspaper {
+        transform: rotate(21deg) translateX(-4px) translateY(2px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-app-store {
+        transform: rotate(61deg) translateX(-13px) translateY(-1px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-search {
+        transform: rotate(100.5deg) translateX(-24px) translateY(1px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-barcode {
+        transform: rotate(140deg) translateX(-31px) translateY(10px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-shopping-cart {
+        transform: rotate(179deg) translateX(-36px) translateY(21px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-binoculars {
+        transform: rotate(219deg) translateX(-22px) translateY(28px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-user-friends {
+        transform: rotate(259deg) translateX(-15px) translateY(33px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-address-card {
+        transform: rotate(300deg) translateX(-2px) translateY(26px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-search-plus {
+        transform: rotate(340deg) translateX(2px) translateY(14px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+}
+
+/* iPhone 5s, 6, 6s, 7, 8 LANDSCAPE */
+@media only screen and (min-width: 100px) and (max-width: 699px) and (orientation: landscape) {
+    html {
+        overflow: auto;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        /*background: yellow;
+        /*
+        -webkit-animation: bgcolor 20s infinite;
+        animation: bgcolor 10s infinite;
+        animation-duration: 45s;
+        */
+    }
+    
+    button {
+        outline: none;
+        border: none;
+    }
+    
+    .headers {
+        text-align: center;
+        font-size: 20px;
+        /*
+        margin-top: 75px;*/
+    }
+    
+    a {
+        cursor: pointer;
+        outline: 0;
+        outline-style: none;
+        text-decoration: none;
+    }
+    
+    .centerWebsite {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1000;
+    }
+    
+    .welcome-msg {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 0px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 1000;
+    }
+    
+    .letterA {
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+        max-width: 100%;
+        z-index: 999;
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Inner-circles for sub-menu */
+    .redInner-dot, .orangeInner-dot, .yellowInner-dot, .goldenInner-dot, .lightGreenInner-dot, .lightBlueInner-dot, .lavenderInner-dot, .violetInner-dot, .pinkInner-dot {
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -22.5px;
+        margin-top: -22.5px;
+        border: 3px solid black;
+        z-index: 4001;
+    }/*
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-5deg) translate(130px);
+    }*/
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-21deg) translate(85px);
+    }/*
+    .circle .redInner-dot:nth-of-type(3) {
+        background-color: #FFADAE;
+        transform: rotate(-35deg) translate(130px);
+    }
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-45deg) translate(130px);
+    }*/
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-61deg) translate(85px);
+    }/*
+    .circle .orangeInner-dot:nth-of-type(3) {
+        background-color: #FFCE99;
+        transform: rotate(-75deg) translate(130px);
+    }
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-85deg) translate(130px);
+    }*/
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-100.5deg) translate(87px);
+    }/*
+    .circle .yellowInner-dot:nth-of-type(3) {
+        background-color: #FFF7A2;
+        transform: rotate(-115deg) translate(130px);
+    }
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-125deg) translate(130px);
+    }*/
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-140deg) translate(88px);
+    }/*
+    .circle .goldenInner-dot:nth-of-type(3) {
+        background-color: #DDFFA9;
+        transform: rotate(-155deg) translate(130px);
+    }
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-165deg) translate(130px);
+    }*/
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-179deg) translate(88px);
+    }/*
+    .circle .lightGreenInner-dot:nth-of-type(3) {
+        background-color: #C9FFF1;
+        transform: rotate(-195deg) translate(130px);
+    }
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-205deg) translate(130px);
+    }*/
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-220deg) translate(86px);
+    }/*
+    .circle .lightBlueInner-dot:nth-of-type(3) {
+        background-color: #C2E8FB;
+        transform: rotate(-235deg) translate(130px);
+    }
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-245deg) translate(130px);
+    }*/
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-259deg) translate(84px);
+    }/*
+    .circle .lavenderInner-dot:nth-of-type(3) {
+        background-color: #CADAFE;
+        transform: rotate(-275deg) translate(130px);
+    }
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-285deg) translate(130px);
+    }*/
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-300deg) translate(84px);
+    }/*
+    .circle .violetInner-dot:nth-of-type(3) {
+        background-color: #D9BDED;
+        transform: rotate(-315deg) translate(130px);
+    }
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-325deg) translate(130px);
+    }*/
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-340deg) translate(83px);
+    }/*
+    .circle .pinkInner-dot:nth-of-type(3) {
+        background-color: #FEB2D0;
+        transform: rotate(-355deg) translate(130px);
+    }*/
+    
+    /* Outer Circle for Allerio Logo */
+    .dot {
+        width: 36px;
+        height: 36px;
+        position: fixed;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -18px;
+        margin-top: -18px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 4000;
+    }
+    .circle .dot:nth-child(1) {
+        background-color: #FFADAE;
+        transform: rotate(340deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(2) {
+        z-index: 2;
+        background-color: #FFCE99;
+        transform: rotate(300deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(3) {
+        background-color: #FFF7A2;
+        transform: rotate(260deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(4) {
+        background-color: #DDFFA9;
+        transform: rotate(220deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(5) {
+        background-color: #C9FFF1;
+        transform: rotate(180deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(6) {
+        background-color: #C2E8FB;
+        transform: rotate(140deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(7) {
+        background-color: #CADAFE;
+        transform: rotate(100deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(8) {
+        background-color: #D9BDED;
+        transform: rotate(60deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(9) {
+        background-color: #FEB2D0;
+        transform: rotate(20deg) translate(85px);
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Overlay Settings */
+    #overlay-red, #overlay-orange, #overlay-yellow, #overlay-golden, #overlay-lightGreen, #overlay-lightBlue, #overlay-lavender, #overlay-violet, #overlay-pink {
+        position: absolute; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        width: 80px; /* Full width (cover the whole page)   */
+        height: 80px; /* Full height (cover the whole page)   */
+        top: 50%;
+        left: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+        z-index: 1000; /* Specify a stack order in case you're   using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        /*animation: opacity-appear 0.3s linear 1;*/
+        /*border: 1px solid black;*/
+        background: white;
+    }
+    #overlay-help {
+        display: none;
+        position: fixed;
+        width: 200px; 
+        height: 100px; 
+        bottom: 0px;
+        right: 75px;
+        z-index: 1000;
+        background: white;
+        border: 0.5px solid gray;
+        animation: opacity-appear 0.5s linear 1;
+    }
+    .overlay-text {
+        font-size: 32px;
+        color: black;
+        text-align: center;
+        transform: translateY(50%);
+    }
+    .overlay-text-help {
+        display: block;
+        font-size: 15px;
+        color: black;
+        padding: 10px;
+    }
+    .close-overlay {
+        position: relative;
+        float: right;
+        border: none;
+        color: black;
+        font-size: 25px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .social-media-twitter {
+        height: 39px;
+        width: 39px;
+        transform: translateX(1px) translateY(-2px);
+    }
+    .social-media-linkedin {
+        height: 34px;
+        width: 34px;
+        transform: translateY(-5px);
+    }
+    .fa-facebook {
+        color: #3B5998;
+        font-size: 30px;
+        transform: translateY(-10px);
+    }
+    .social-media-bar {
+        position: absolute;
+        bottom: 0%;
+    }
+    .icon-bar #social-media {
+        display: inline-block;
+        text-align: center;
+        padding: 30px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+    .fa-newspaper {
+        transform: rotate(21deg) translateX(-6px) translateY(-4px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-app-store {
+        transform: rotate(61deg) translateX(-18px) translateY(-4px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-search {
+        transform: rotate(100.5deg) translateX(-28px) translateY(3px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-barcode {
+        transform: rotate(140deg) translateX(-30px) translateY(16px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-shopping-cart {
+        transform: rotate(179deg) translateX(-30px) translateY(27px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-binoculars {
+        transform: rotate(219deg) translateX(-14px) translateY(30px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-user-friends {
+        transform: rotate(259deg) translateX(-5px) translateY(30px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-address-card {
+        transform: rotate(300deg) translateX(5px) translateY(18px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+    .fa-search-plus {
+        transform: rotate(340deg) translateX(4px) translateY(5px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 25px;
+    }
+}
+
+/* iPhone XR, XS Max, iPhone 6+/6s+/7+/8+ devices PORTRAIT */
+@media only screen and (min-width: 376px) and (max-width: 749px) and (orientation: portrait) {
+    
+    html {
+        overflow: auto;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        /*background: green;
+        /*
+        -webkit-animation: bgcolor 20s infinite;
+        animation: bgcolor 10s infinite;
+        animation-duration: 45s;
+        */
+    }
+    
+    button {
+        outline: none;
+        border: none;
+    }
+    
+    .headers {
+        text-align: center;
+        font-size: 30px;
+        /*
+        margin-top: 75px;*/
+    }
+    
+    a {
+        cursor: pointer;
+        outline: 0;
+        outline-style: none;
+        text-decoration: none;
+    }
+    
+    .centerWebsite {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1000;
+    }
+    
+    .welcome-msg {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 75px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 1000;
+    }
+    
+    .letterA {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        max-width: 100%;
+        z-index: 999;
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Inner-circles for sub-menu */
+    .redInner-dot, .orangeInner-dot, .yellowInner-dot, .goldenInner-dot, .lightGreenInner-dot, .lightBlueInner-dot, .lavenderInner-dot, .violetInner-dot, .pinkInner-dot {
+        width: 63px;
+        height: 63px;
+        position: fixed;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -31.5px;
+        margin-top: -31.5px;
+        border: 3px black solid;
+        z-index: 4001;
+    }/*
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-5deg) translate(185px);
+    }*/
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-21deg) translate(115px);
+    }/*
+    .circle .redInner-dot:nth-of-type(3) {
+        background-color: #FFADAE;
+        transform: rotate(-35deg) translate(185px);
+    }
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-45deg) translate(185px);
+    }*/
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-61deg) translate(115px);
+    }/*
+    .circle .orangeInner-dot:nth-of-type(3) {
+        background-color: #FFCE99;
+        transform: rotate(-75deg) translate(185px);
+    }
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-85deg) translate(185px);
+    }*/
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-100.5deg) translate(117px);
+    }/*
+    .circle .yellowInner-dot:nth-of-type(3) {
+        background-color: #FFF7A2;
+        transform: rotate(-115deg) translate(185px);
+    }
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-125deg) translate(185px);
+    }*/
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-140deg) translate(118px);
+    }/*
+    .circle .goldenInner-dot:nth-of-type(3) {
+        background-color: #DDFFA9;
+        transform: rotate(-155deg) translate(185px);
+    }
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-165deg) translate(185px);
+    }*/
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-179deg) translate(118px);
+    }/*
+    .circle .lightGreenInner-dot:nth-of-type(3) {
+        background-color: #C9FFF1;
+        transform: rotate(-195deg) translate(185px);
+    }
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-205deg) translate(185px);
+    }*/
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-219deg) translate(115px);
+    }/*
+    .circle .lightBlueInner-dot:nth-of-type(3) {
+        background-color: #C2E8FB;
+        transform: rotate(-235deg) translate(185px);
+    }
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-245deg) translate(185px);
+    }*/
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-259deg) translate(114px);
+    }/*
+    .circle .lavenderInner-dot:nth-of-type(3) {
+        background-color: #CADAFE;
+        transform: rotate(-275deg) translate(185px);
+    }
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-285deg) translate(185px);
+    }*/
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-300deg) translate(114px);
+    }/*
+    .circle .violetInner-dot:nth-of-type(3) {
+        background-color: #D9BDED;
+        transform: rotate(-315deg) translate(185px);
+    }
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-325deg) translate(185px);
+    }*/
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-340deg) translate(113px);
+    }/*
+    .circle .pinkInner-dot:nth-of-type(3) {
+        background-color: #FEB2D0;
+        transform: rotate(-355deg) translate(185px);
+    }*/
+    
+    /* Outer Circle for Allerio Logo */
+    .dot {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 4000;
+    }
+    .circle .dot:nth-child(1) {
+        background-color: #FFADAE;
+        transform: rotate(340deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(2) {
+        z-index: 2;
+        background-color: #FFCE99;
+        transform: rotate(300deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(3) {
+        background-color: #FFF7A2;
+        transform: rotate(260deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(4) {
+        background-color: #DDFFA9;
+        transform: rotate(220deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(5) {
+        background-color: #C9FFF1;
+        transform: rotate(180deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(6) {
+        background-color: #C2E8FB;
+        transform: rotate(140deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(7) {
+        background-color: #CADAFE;
+        transform: rotate(100deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(8) {
+        background-color: #D9BDED;
+        transform: rotate(60deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(9) {
+        background-color: #FEB2D0;
+        transform: rotate(20deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Overlay Settings */
+    #overlay-red, #overlay-orange, #overlay-yellow, #overlay-golden, #overlay-lightGreen, #overlay-lightBlue, #overlay-lavender, #overlay-violet, #overlay-pink {
+        position: absolute; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        width: 100px; /* Full width (cover the whole page)   */
+        height: 100px; /* Full height (cover the whole page)   */
+        top: 50%;
+        left: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        z-index: 1000; /* Specify a stack order in case you're   using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        /*animation: opacity-appear 0.3s linear 1;*/
+        /*border: 1px solid black;*/
+        background: white;
+    }
+    #overlay-help {
+        display: none;
+        position: absolute;
+        width: 200px; 
+        height: 100px; 
+        bottom: 100px;
+        right: 100px;
+        z-index: 2000;
+        background: white;
+        border: 0.5px solid gray;
+        animation: opacity-appear 0.5s linear 1;
+    }
+    .overlay-text {
+        font-size: 35px;
+        color: black;
+        text-align: center;
+        transform: translateY(50%);
+    }
+    .overlay-text-help {
+        display: block;
+        font-size: 15px;
+        color: black;
+        padding: 10px;
+    }
+    .close-overlay {
+        position: relative;
+        float: right;
+        border: none;
+        color: black;
+        font-size: 25px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .social-media-twitter {
+        height: 53px;
+        width: 53px;
+        transform: translateX(2px) translateY(1px);
+    }
+    .social-media-linkedin {
+        height: 45px;
+        width: 45px;
+        transform: translateY(-3px);
+    }
+    .fa-facebook {
+        color: #3B5998;
+        font-size: 40px;
+        transform: translateY(-10px);
+    }
+    .social-media-bar {
+        position: absolute;
+        bottom: 0%;
+    }
+    .icon-bar #social-media {
+        display: inline-block;
+        text-align: center;
+        padding: 30px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+    .fa-newspaper {
+        transform: rotate(21deg) translateX(-5px) translateY(2px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-app-store {
+        transform: rotate(61deg) translateX(-17px) translateY(-2px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-search {
+        transform: rotate(100.5deg) translateX(-30px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-barcode {
+        transform: rotate(140deg) translateX(-36px) translateY(13px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-shopping-cart {
+        transform: rotate(179deg) translateX(-40px) translateY(25px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-binoculars {
+        transform: rotate(219deg) translateX(-26px) translateY(34px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-user-friends {
+        transform: rotate(259deg) translateX(-18px) translateY(39px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-address-card {
+        transform: rotate(300deg) translateX(-2px) translateY(30px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-search-plus {
+        transform: rotate(340deg) translateX(2px) translateY(15px);
+        transform-origin: bottom left;
+        color: black;
+    }
+}
+
+/* iPhone X, XS, XR, XS Max, 6+, 6s+, 7+, 8+ LANDSCAPE */
+@media only screen and (min-width: 700px) and (max-width: 809px) and (orientation: landscape) {
+    
+    html {
+        overflow: auto;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        /*background: blue;
+        /*
+        -webkit-animation: bgcolor 20s infinite;
+        animation: bgcolor 10s infinite;
+        animation-duration: 45s;
+        */
+    }
+    
+    button {
+        outline: none;
+        border: none;
+    }
+    
+    .headers {
+        text-align: center;
+        font-size: 20px;
+        /*
+        margin-top: 75px;*/
+    }
+    
+    a {
+        cursor: pointer;
+        outline: 0;
+        outline-style: none;
+        text-decoration: none;
+    }
+    
+    .centerWebsite {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1000;
+    }
+    
+    .welcome-msg {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 5px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 1000;
+    }
+    
+    .letterA {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        max-width: 100%;
+        z-index: 999;
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Inner-circles for sub-menu */
+    .redInner-dot, .orangeInner-dot, .yellowInner-dot, .goldenInner-dot, .lightGreenInner-dot, .lightBlueInner-dot, .lavenderInner-dot, .violetInner-dot, .pinkInner-dot {
+        width: 63px;
+        height: 63px;
+        position: fixed;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -31.5px;
+        margin-top: -31.5px;
+        border: 3px solid black;
+        z-index: 4001;
+    }/*
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-5deg) translate(185px);
+    }*/
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-21deg) translate(115px);
+    }/*
+    .circle .redInner-dot:nth-of-type(3) {
+        background-color: #FFADAE;
+        transform: rotate(-35deg) translate(185px);
+    }
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-45deg) translate(185px);
+    }*/
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-61deg) translate(115px);
+    }/*
+    .circle .orangeInner-dot:nth-of-type(3) {
+        background-color: #FFCE99;
+        transform: rotate(-75deg) translate(185px);
+    }
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-85deg) translate(185px);
+    }*/
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-100.5deg) translate(117px);
+    }/*
+    .circle .yellowInner-dot:nth-of-type(3) {
+        background-color: #FFF7A2;
+        transform: rotate(-115deg) translate(185px);
+    }
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-125deg) translate(185px);
+    }*/
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-140deg) translate(118px);
+    }/*
+    .circle .goldenInner-dot:nth-of-type(3) {
+        background-color: #DDFFA9;
+        transform: rotate(-155deg) translate(185px);
+    }
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-165deg) translate(185px);
+    }*/
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-179deg) translate(118px);
+    }/*
+    .circle .lightGreenInner-dot:nth-of-type(3) {
+        background-color: #C9FFF1;
+        transform: rotate(-195deg) translate(185px);
+    }
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-205deg) translate(185px);
+    }*/
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-219deg) translate(115px);
+    }/*
+    .circle .lightBlueInner-dot:nth-of-type(3) {
+        background-color: #C2E8FB;
+        transform: rotate(-235deg) translate(185px);
+    }
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-245deg) translate(185px);
+    }*/
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-259deg) translate(114px);
+    }/*
+    .circle .lavenderInner-dot:nth-of-type(3) {
+        background-color: #CADAFE;
+        transform: rotate(-275deg) translate(185px);
+    }
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-285deg) translate(185px);
+    }*/
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-300deg) translate(114px);
+    }/*
+    .circle .violetInner-dot:nth-of-type(3) {
+        background-color: #D9BDED;
+        transform: rotate(-315deg) translate(185px);
+    }
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-325deg) translate(185px);
+    }*/
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-340deg) translate(113px);
+    }/*
+    .circle .pinkInner-dot:nth-of-type(3) {
+        background-color: #FEB2D0;
+        transform: rotate(-355deg) translate(185px);
+    }*/
+    
+    /* Outer Circle for Allerio Logo */
+    .dot {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 4000;
+    }
+    .circle .dot:nth-child(1) {
+        background-color: #FFADAE;
+        transform: rotate(340deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(2) {
+        z-index: 2;
+        background-color: #FFCE99;
+        transform: rotate(300deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(3) {
+        background-color: #FFF7A2;
+        transform: rotate(260deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(4) {
+        background-color: #DDFFA9;
+        transform: rotate(220deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(5) {
+        background-color: #C9FFF1;
+        transform: rotate(180deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(6) {
+        background-color: #C2E8FB;
+        transform: rotate(140deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(7) {
+        background-color: #CADAFE;
+        transform: rotate(100deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(8) {
+        background-color: #D9BDED;
+        transform: rotate(60deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(9) {
+        background-color: #FEB2D0;
+        transform: rotate(20deg) translate(115px);
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Overlay Settings */
+    #overlay-red, #overlay-orange, #overlay-yellow, #overlay-golden, #overlay-lightGreen, #overlay-lightBlue, #overlay-lavender, #overlay-violet, #overlay-pink {
+        position: absolute; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        width: 100px; /* Full width (cover the whole page)   */
+        height: 100px; /* Full height (cover the whole page)   */
+        top: 50%;
+        left: 50%;
+        margin-left: -50px;
+        margin-top: -50px;
+        z-index: 1000; /* Specify a stack order in case you're   using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        /*animation: opacity-appear 0.3s linear 1;*/
+        /*border: 1px solid black;*/
+        background: white;
+    }
+    #overlay-help {
+        display: none;
+        position: absolute;
+        width: 200px; 
+        height: 100px; 
+        bottom: 100px;
+        right: 100px;
+        z-index: 2000;
+        background: white;
+        border: 0.5px solid gray;
+        animation: opacity-appear 0.5s linear 1;
+    }
+    .overlay-text {
+        font-size: 25px;
+        color: black;
+        text-align: center;
+        transform: translateY(50%);
+    }
+    .overlay-text-help {
+        display: block;
+        font-size: 15px;
+        color: black;
+        padding: 10px;
+    }
+    .close-overlay {
+        position: relative;
+        float: right;
+        border: none;
+        color: black;
+        font-size: 25px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .social-media-twitter {
+        height: 53px;
+        width: 53px;
+        transform: translateX(2px) translateY(1px);
+    }
+    .social-media-linkedin {
+        height: 45px;
+        width: 45px;
+        transform: translateY(-3px);
+    }
+    .fa-facebook {
+        color: #3B5998;
+        font-size: 40px;
+        transform: translateY(-10px);
+    }
+    .social-media-bar {
+        position: absolute;
+        bottom: 0%;
+    }
+    .icon-bar #social-media {
+        display: inline-block;
+        text-align: center;
+        padding: 30px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+    .fa-question-circle {
+        font-size: 30px;
+    }
+    .fa-newspaper {
+        transform: rotate(21deg) translateX(-1px) translateY(9px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-app-store {
+        transform: rotate(61deg) translateX(-7px) translateY(3px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-search {
+        transform: rotate(100.5deg) translateX(-17px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-barcode {
+        transform: rotate(140deg) translateX(-26px) translateY(5px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-shopping-cart {
+        transform: rotate(179deg) translateX(-36px) translateY(13px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-binoculars {
+        transform: rotate(219deg) translateX(-27px) translateY(23px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-user-friends {
+        transform: rotate(259deg) translateX(-23px) translateY(32px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-address-card {
+        transform: rotate(300deg) translateX(-10px) translateY(30px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+    .fa-search-plus {
+        transform: rotate(340deg) translateX(-3px) translateY(20px);
+        transform-origin: bottom left;
+        color: black;
+        font-size: 30px;
+    }
+}
+
+/* iPads PORTRAIT */
+@media only screen and (min-width: 750px) and (max-width: 1280px) and (orientation: portrait) {
+    
+    html {
+        overflow: auto;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        /*background: black;
+        /*
+        -webkit-animation: bgcolor 20s infinite;
+        animation: bgcolor 10s infinite;
+        animation-duration: 45s;
+        */
+    }
+    
+    button {
+        outline: none;
+        border: none;
+        text-decoration: none;
+    }
+    
+    .headers {
+        text-align: center;
+        font-size: 40px;
+        /*
+        margin-top: 75px;*/
+    }
+    
+    a {
+        cursor: pointer;
+        outline: 0;
+        outline-style: none;
+        text-decoration: none;
+    }
+    
+    .centerWebsite {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1000;
+    }
+    
+    .welcome-msg {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 0px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 1000;
+    }
+    
+    .letterA {
+        height: 180px;
+        width: 180px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -90px;
+        margin-top: -90px;
+        max-width: 100%;
+        z-index: 999;
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Inner-circles for sub-menu */
+    .redInner-dot, .orangeInner-dot, .yellowInner-dot, .goldenInner-dot, .lightGreenInner-dot, .lightBlueInner-dot, .lavenderInner-dot, .violetInner-dot, .pinkInner-dot {
+        width: 88px;
+        height: 88px;
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -44px;
+        margin-top: -44px;
+        border: 3px solid black;
+        z-index: 4001;
+    }/*
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-5deg) translate(280px);
+    }*/
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-21deg) translate(180px);
+    }/*
+    .circle .redInner-dot:nth-of-type(3) {
+        background-color: #FFADAE;
+        transform: rotate(-35deg) translate(280px);
+    }
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-45deg) translate(280px);
+    }*/
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-61deg) translate(180px);
+    }/*
+    .circle .orangeInner-dot:nth-of-type(3) {
+        background-color: #FFCE99;
+        transform: rotate(-75deg) translate(280px);
+    }
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-85deg) translate(280px);
+    }*/
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-100.5deg) translate(182px);
+    }/*
+    .circle .yellowInner-dot:nth-of-type(3) {
+        background-color: #FFF7A2;
+        transform: rotate(-115deg) translate(280px);
+    }
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-125deg) translate(280px);
+    }*/
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-140deg) translate(183px);
+    }/*
+    .circle .goldenInner-dot:nth-of-type(3) {
+        background-color: #DDFFA9;
+        transform: rotate(-155deg) translate(280px);
+    }
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-165deg) translate(280px);
+    }*/
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-179deg) translate(183px);
+    }/*
+    .circle .lightGreenInner-dot:nth-of-type(3) {
+        background-color: #C9FFF1;
+        transform: rotate(-195deg) translate(280px);
+    }
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-205deg) translate(280px);
+    }*/
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-219deg) translate(180px);
+    }/*
+    .circle .lightBlueInner-dot:nth-of-type(3) {
+        background-color: #C2E8FB;
+        transform: rotate(-235deg) translate(280px);
+    }
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-245deg) translate(280px);
+    }*/
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-259deg) translate(179px);
+    }/*
+    .circle .lavenderInner-dot:nth-of-type(3) {
+        background-color: #CADAFE;
+        transform: rotate(-275deg) translate(280px);
+    }
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-285deg) translate(280px);
+    }*/
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-300deg) translate(179px);
+    }/*
+    .circle .violetInner-dot:nth-of-type(3) {
+        background-color: #D9BDED;
+        transform: rotate(-315deg) translate(280px);
+    }
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-325deg) translate(280px);
+    }*/
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-340deg) translate(178px);
+    }/*
+    .circle .pinkInner-dot:nth-of-type(3) {
+        background-color: #FEB2D0;
+        transform: rotate(-355deg) translate(280px);
+    }*/
+    
+    /* Outer Circle for Allerio Logo */
+    .dot {
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -35px;
+        margin-top: -35px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 4000;
+    }
+    .circle .dot:nth-child(1) {
+        background-color: #FFADAE;
+        transform: rotate(340deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(2) {
+        z-index: 2;
+        background-color: #FFCE99;
+        transform: rotate(300deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(3) {
+        background-color: #FFF7A2;
+        transform: rotate(260deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(4) {
+        background-color: #DDFFA9;
+        transform: rotate(220deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(5) {
+        background-color: #C9FFF1;
+        transform: rotate(180deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(6) {
+        background-color: #C2E8FB;
+        transform: rotate(140deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(7) {
+        background-color: #CADAFE;
+        transform: rotate(100deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(8) {
+        background-color: #D9BDED;
+        transform: rotate(60deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(9) {
+        background-color: #FEB2D0;
+        transform: rotate(20deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Overlay Settings */
+    #overlay-red, #overlay-orange, #overlay-yellow, #overlay-golden, #overlay-lightGreen, #overlay-lightBlue, #overlay-lavender, #overlay-violet, #overlay-pink {
+        position: absolute; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        width: 200px; /* Full width (cover the whole page)   */
+        height: 200px; /* Full height (cover the whole page)   */
+        top: 50%;
+        left: 50%;
+        margin-left: -100px;
+        margin-top: -100px;
+        z-index: 1000; /* Specify a stack order in case you're   using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        /*animation: opacity-appear 0.3s linear 1;*/
+        /*border: 1px solid black;*/
+        background: white;
+    }
+    #overlay-help {
+        display: none;
+        position: fixed;
+        width: 200px; /* Full width (cover the whole page)   */
+        height: 200px; /* Full height (cover the whole page)   */
+        bottom: 290px;
+        right: 150px;
+        z-index: 2000;
+        background: white;
+        border: 0.5px solid gray;
+        animation: opacity-appear 0.5s linear 1;
+    }
+    .overlay-text {
+        font-size: 50px;
+        color: black;
+        text-align: center;
+        transform: translateY(50%);
+    }
+    .overlay-text-help {
+        display: block;
+        font-size: 20px;
+        color: black;
+        padding: 15px;
+    }
+    .close-overlay {
+        position: relative;
+        border: none;
+        color: black;
+        font-size: 25px;
+        background-color: transparent;
+        cursor: pointer;
+        float: right;
+    }
+    .social-media-twitter {
+        height: 63px;
+        width: 63px;
+        transform: translateX(2px) translateY(3px);
+    }
+    .social-media-linkedin {
+        height: 55px;
+        width: 55px;
+        transform: translateY(-1px);
+    }
+    .fa-facebook {
+        color: #3B5998;
+        font-size: 50px;
+        transform: translateY(-10px);
+    }
+    .social-media-bar {
+        position: fixed;
+        bottom: 0%;
+        transform: translateX(10px);
+    }
+    .icon-bar #social-media {
+        display: inline-block;
+        text-align: center;
+        padding: 30px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+    .fa-newspaper {
+        transform: rotate(21deg) translateX(-7px) translateY(2px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-app-store {
+        transform: rotate(61deg) translateX(-24px) translateY(-2px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-search {
+        transform: rotate(100.5deg) translateX(-45px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-barcode {
+        transform: rotate(140deg) translateX(-52px) translateY(18px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-shopping-cart {
+        transform: rotate(179deg) translateX(-59px) translateY(38px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-binoculars {
+        transform: rotate(219deg) translateX(-36px) translateY(49px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-user-friends {
+        transform: rotate(259deg) translateX(-24px) translateY(56px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-address-card {
+        transform: rotate(300deg) translateX(-3px) translateY(43px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-search-plus {
+        transform: rotate(340deg) translateX(2px) translateY(20px);
+        transform-origin: bottom left;
+        color: black;
+    }
+}
+
+/* iPads LANDSCAPE */
+@media only screen and (min-width: 810px) and (max-width: 1280px) and (orientation: landscape) {
+    
+    html {
+        overflow: auto;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        /*background: gray;
+        /*
+        -webkit-animation: bgcolor 20s infinite;
+        animation: bgcolor 10s infinite;
+        animation-duration: 45s;
+        */
+    }
+    
+    button {
+        outline: none;
+        border: none;
+        text-decoration: none;
+    }
+    
+    .headers {
+        text-align: center;
+        font-size: 40px;
+        /*
+        margin-top: 75px;*/
+    }
+    
+    a {
+        cursor: pointer;
+        outline: 0;
+        outline-style: none;
+        text-decoration: none;
+    }
+    
+    .centerWebsite {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 1000;
+    }
+    
+    .welcome-msg {
+        text-align: center;
+        font-size: 50px;
+        margin-top: 0px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 1000;
+    }
+    
+    .letterA {
+        height: 180px;
+        width: 180px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -90px;
+        margin-top: -90px;
+        max-width: 100%;
+        z-index: 999;
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Inner-circles for sub-menu */
+    .redInner-dot, .orangeInner-dot, .yellowInner-dot, .goldenInner-dot, .lightGreenInner-dot, .lightBlueInner-dot, .lavenderInner-dot, .violetInner-dot, .pinkInner-dot {
+        width: 88px;
+        height: 88px;
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -44px;
+        margin-top: -44px;
+        border: 3px solid black;
+        z-index: 4001;
+    }/*
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-5deg) translate(280px);
+    }*/
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-21deg) translate(180px);
+    }/*
+    .circle .redInner-dot:nth-of-type(3) {
+        background-color: #FFADAE;
+        transform: rotate(-35deg) translate(280px);
+    }
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-45deg) translate(280px);
+    }*/
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-61deg) translate(180px);
+    }/*
+    .circle .orangeInner-dot:nth-of-type(3) {
+        background-color: #FFCE99;
+        transform: rotate(-75deg) translate(280px);
+    }
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-85deg) translate(280px);
+    }*/
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-100.5deg) translate(182px);
+    }/*
+    .circle .yellowInner-dot:nth-of-type(3) {
+        background-color: #FFF7A2;
+        transform: rotate(-115deg) translate(280px);
+    }
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-125deg) translate(280px);
+    }*/
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-140deg) translate(183px);
+    }/*
+    .circle .goldenInner-dot:nth-of-type(3) {
+        background-color: #DDFFA9;
+        transform: rotate(-155deg) translate(280px);
+    }
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-165deg) translate(280px);
+    }*/
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-179deg) translate(183px);
+    }/*
+    .circle .lightGreenInner-dot:nth-of-type(3) {
+        background-color: #C9FFF1;
+        transform: rotate(-195deg) translate(280px);
+    }
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-205deg) translate(280px);
+    }*/
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-219deg) translate(180px);
+    }/*
+    .circle .lightBlueInner-dot:nth-of-type(3) {
+        background-color: #C2E8FB;
+        transform: rotate(-235deg) translate(280px);
+    }
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-245deg) translate(280px);
+    }*/
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-259deg) translate(179px);
+    }/*
+    .circle .lavenderInner-dot:nth-of-type(3) {
+        background-color: #CADAFE;
+        transform: rotate(-275deg) translate(280px);
+    }
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-285deg) translate(280px);
+    }*/
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-300deg) translate(179px);
+    }/*
+    .circle .violetInner-dot:nth-of-type(3) {
+        background-color: #D9BDED;
+        transform: rotate(-315deg) translate(280px);
+    }
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-325deg) translate(280px);
+    }*/
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-340deg) translate(178px);
+    }/*
+    .circle .pinkInner-dot:nth-of-type(3) {
+        background-color: #FEB2D0;
+        transform: rotate(-355deg) translate(280px);
+    }*/
+    
+    /* Outer Circle for Allerio Logo */
+    .dot {
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -35px;
+        margin-top: -35px;
+        animation: opacity-appear 1s linear 1;
+        z-index: 4000;
+    }
+    .circle .dot:nth-child(1) {
+        background-color: #FFADAE;
+        transform: rotate(340deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(2) {
+        z-index: 2;
+        background-color: #FFCE99;
+        transform: rotate(300deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(3) {
+        background-color: #FFF7A2;
+        transform: rotate(260deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(4) {
+        background-color: #DDFFA9;
+        transform: rotate(220deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(5) {
+        background-color: #C9FFF1;
+        transform: rotate(180deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(6) {
+        background-color: #C2E8FB;
+        transform: rotate(140deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(7) {
+        background-color: #CADAFE;
+        transform: rotate(100deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(8) {
+        background-color: #D9BDED;
+        transform: rotate(60deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    .circle .dot:nth-child(9) {
+        background-color: #FEB2D0;
+        transform: rotate(20deg) translate(180px);
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Overlay Settings */
+    #overlay-red, #overlay-orange, #overlay-yellow, #overlay-golden, #overlay-lightGreen, #overlay-lightBlue, #overlay-lavender, #overlay-violet, #overlay-pink {
+        position: absolute; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        width: 200px; /* Full width (cover the whole page)   */
+        height: 200px; /* Full height (cover the whole page)   */
+        top: 50%;
+        left: 50%;
+        margin-left: -100px;
+        margin-top: -100px;
+        z-index: 1000; /* Specify a stack order in case you're   using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+        /*animation: opacity-appear 0.3s linear 1;*/
+        /*border: 1px solid black;*/
+        background: white;
+    }
+    #overlay-help {
+        display: none;
+        position: fixed;
+        width: 200px; /* Full width (cover the whole page)   */
+        height: 200px; /* Full height (cover the whole page)   */
+        bottom: 290px;
+        right: 150px;
+        z-index: 2000;
+        background: white;
+        border: 0.5px solid gray;
+        animation: opacity-appear 0.5s linear 1;
+    }
+    .overlay-text {
+        font-size: 50px;
+        color: black;
+        text-align: center;
+        transform: translateY(50%);
+    }
+    .overlay-text-help {
+        display: block;
+        font-size: 20px;
+        color: black;
+        padding: 15px;
+    }
+    .close-overlay {
+        position: relative;
+        border: none;
+        color: black;
+        font-size: 25px;
+        background-color: transparent;
+        cursor: pointer;
+        float: right;
+    }
+    .social-media-twitter {
+        height: 63px;
+        width: 63px;
+        transform: translateX(2px) translateY(3px);
+    }
+    .social-media-linkedin {
+        height: 55px;
+        width: 55px;
+        transform: translateY(-1px);
+    }
+    .fa-facebook {
+        color: #3B5998;
+        font-size: 50px;
+        transform: translateY(-10px);
+    }
+    .social-media-bar {
+        position: fixed;
+        bottom: 0%;
+        transform: translateX(10px);
+    }
+    .icon-bar #social-media {
+        display: inline-block;
+        text-align: center;
+        padding: 30px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+    .fa-newspaper {
+        transform: rotate(21deg) translateX(-7px) translateY(2px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-app-store {
+        transform: rotate(61deg) translateX(-24px) translateY(-2px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-search {
+        transform: rotate(100.5deg) translateX(-45px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-barcode {
+        transform: rotate(140deg) translateX(-52px) translateY(18px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-shopping-cart {
+        transform: rotate(179deg) translateX(-59px) translateY(38px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-binoculars {
+        transform: rotate(219deg) translateX(-36px) translateY(49px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-user-friends {
+        transform: rotate(259deg) translateX(-24px) translateY(56px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-address-card {
+        transform: rotate(300deg) translateX(-3px) translateY(43px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-search-plus {
+        transform: rotate(340deg) translateX(2px) translateY(20px);
+        transform-origin: bottom left;
+        color: black;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1281px) {
+    
+    html {
+        overflow: auto;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+        /*
+        -webkit-animation: bgcolor 20s infinite;
+        animation: bgcolor 10s infinite;
+        animation-duration: 45s;
+        */
+    }
+    
+    button {
+        outline: none;
+        border: none;
+        text-decoration: none;
+    }
+    
+    .headers {
+        text-align: center;
+        font-size: 40px;
+        /*
+        margin-top: 75px;*/
+    }
+    
+    a {
+        cursor: pointer;
+        outline: 0;
+        outline-style: none;
+        text-decoration: none;
+    }
+    
+    .centerWebsite {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 2000;
+    }
+    
+    .welcome-msg {
+        text-align: center;
+        font-size: 50px;
+        z-index: 2000;
+    }
+    
+    .letterA {
+        height: 180px;
+        width: 180px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -90px;
+        margin-top: -90px;
+        max-width: 100%;
+        z-index: 100;
+        animation: opacity-appear 1s linear 1;
+    }
+    
+    /* Inner-circles for sub-menu */
+    .redInner-dot, .orangeInner-dot, .yellowInner-dot, .goldenInner-dot, .lightGreenInner-dot, .lightBlueInner-dot, .lavenderInner-dot, .violetInner-dot, .pinkInner-dot {
+        width: 88px;
+        height: 88px;
+        position: fixed;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -44px;
+        margin-top: -44px;
+        border: 3px solid black;
+        z-index: 2000;
+    }
+    /*.circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-5deg) translate(280px);
+    }*/
+    .circle .redInner-dot:nth-of-type(1) {
+        background-color: #FFADAE;
+        transform: rotate(-21deg) translate(180px);
+    }/*
+    .circle .redInner-dot:nth-of-type(3) {
+        background-color: white;
+        transform: rotate(-35deg) translate(280px);
+    }
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-45deg) translate(280px);
+    }*/
+    .circle .orangeInner-dot:nth-of-type(1) {
+        background-color: #FFCE99;
+        transform: rotate(-61deg) translate(180px);
+    }/*
+    .circle .orangeInner-dot:nth-of-type(3) {
+        background-color: #FFCE99;
+        transform: rotate(-75deg) translate(280px);
+    }
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-85deg) translate(280px);
+    }*/
+    .circle .yellowInner-dot:nth-of-type(1) {
+        background-color: #FFF7A2;
+        transform: rotate(-100.5deg) translate(182px);
+    }/*
+    .circle .yellowInner-dot:nth-of-type(3) {
+        background-color: #FFF7A2;
+        transform: rotate(-115deg) translate(280px);
+    }
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-125deg) translate(280px);
+    }*/
+    .circle .goldenInner-dot:nth-of-type(1) {
+        background-color: #DDFFA9;
+        transform: rotate(-140deg) translate(183px);
+    }/*
+    .circle .goldenInner-dot:nth-of-type(3) {
+        background-color: #DDFFA9;
+        transform: rotate(-155deg) translate(280px);
+    }
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-165deg) translate(280px);
+    }*/
+    .circle .lightGreenInner-dot:nth-of-type(1) {
+        background-color: #C9FFF1;
+        transform: rotate(-179deg) translate(183px);
+    }/*
+    .circle .lightGreenInner-dot:nth-of-type(3) {
+        background-color: #C9FFF1;
+        transform: rotate(-195deg) translate(280px);
+    }
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-205deg) translate(280px);
+    }*/
+    .circle .lightBlueInner-dot:nth-of-type(1) {
+        background-color: #C2E8FB;
+        transform: rotate(-219deg) translate(180px);
+    }/*
+    .circle .lightBlueInner-dot:nth-of-type(3) {
+        background-color: #C2E8FB;
+        transform: rotate(-235deg) translate(280px);
+    }
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-245deg) translate(280px);
+    }*/
+    .circle .lavenderInner-dot:nth-of-type(1) {
+        background-color: #CADAFE;
+        transform: rotate(-259deg) translate(179px);
+    }/*
+    .circle .lavenderInner-dot:nth-of-type(3) {
+        background-color: #CADAFE;
+        transform: rotate(-275deg) translate(280px);
+    }
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-285deg) translate(280px);
+    }*/
+    .circle .violetInner-dot:nth-of-type(1) {
+        background-color: #D9BDED;
+        transform: rotate(-300deg) translate(179px);
+    }/*
+    .circle .violetInner-dot:nth-of-type(3) {
+        background-color: #D9BDED;
+        transform: rotate(-315deg) translate(280px);
+    }
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-325deg) translate(280px);
+    }*/
+    .circle .pinkInner-dot:nth-of-type(1) {
+        background-color: #FEB2D0;
+        transform: rotate(-340deg) translate(178px);
+    }/*
+    .circle .pinkInner-dot:nth-of-type(3) {
+        background-color: #FEB2D0;
+        transform: rotate(-355deg) translate(280px);
+    }*/
+    
+    /* Outer Circle for Allerio Logo */
+    .dot {
+        display: block;
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        margin-left: -35px;
+        margin-top: -35px;
+        z-index: 1000;
+        animation: opacity-appear 0.5s linear 1;
+    }
+    .circle .dot:nth-child(1) {
+        background-color: #FFADAE;
+        transform: rotate(340deg) translate(180px);
+    }
+    .circle .dot:nth-child(2) {
+        z-index: 2;
+        background-color: #FFCE99;
+        transform: rotate(300deg) translate(180px);
+    }
+    .circle .dot:nth-child(3) {
+        background-color: #FFF7A2;
+        transform: rotate(260deg) translate(180px);
+    }
+    .circle .dot:nth-child(4) {
+        background-color: #DDFFA9;
+        transform: rotate(220deg) translate(180px);
+    }
+    .circle .dot:nth-child(5) {
+        background-color: #C9FFF1;
+        transform: rotate(180deg) translate(180px);
+    }
+    .circle .dot:nth-child(6) {
+        background-color: #C2E8FB;
+        transform: rotate(140deg) translate(180px);
+    }
+    .circle .dot:nth-child(7) {
+        background-color: #CADAFE;
+        transform: rotate(100deg) translate(180px);
+    }
+    .circle .dot:nth-child(8) {
+        background-color: #D9BDED;
+        transform: rotate(60deg) translate(180px);
+    }
+    .circle .dot:nth-child(9) {
+        background-color: #FEB2D0;
+        transform: rotate(20deg) translate(180px);
+    }
+    
+    /* Overlay Settings */
+    #overlay {
+        position: fixed;
+        display: none; 
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white; 
+        z-index: 100; 
+        cursor: pointer;
+    }
+    #overlay-red, #overlay-orange, #overlay-yellow, #overlay-golden, #overlay-lightGreen, #overlay-lightBlue, #overlay-lavender, #overlay-violet, #overlay-pink {
+        position: fixed;
+        display: none;
+        width: 250px; 
+        height: 250px; 
+        top: 50%;
+        left: 50%;
+        margin-left: -125px;
+        margin-top: -125px;
+        z-index: 2000;
+        cursor: pointer; 
+        border-radius: 50%;
+        background: white;/*
+        position: fixed;
+        display: none; 
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent; 
+        z-index: 100; 
+        cursor: pointer;*/
+    }
+    #overlay-help {
+        display: none;
+        position: fixed;
+        width: 200px; /* Full width (cover the whole page)   */
+        height: 200px; /* Full height (cover the whole page)   */
+        bottom: 290px;
+        right: 150px;
+        z-index: 2000;
+        background: white;
+        border: 0.5px solid gray;
+        animation: opacity-appear 0.5s linear 1;
+    }
+    .overlay-text {
+        font-size: 50px;
+        color: black;
+        text-align: center;
+        transform: translateY(50%);
+        z-index: 2000;
+    }
+    .overlay-text-help {
+        display: block;
+        font-size: 20px;
+        color: black;
+        padding: 15px;
+    }
+    .close-overlay {
+        position: relative;
+        border: none;
+        color: black;
+        font-size: 25px;
+        background-color: transparent;
+        cursor: pointer;
+        float: right;
+    }
+    .social-media-twitter {
+        height: 63px;
+        width: 63px;
+        transform: translateX(2px) translateY(3px);
+    }
+    .social-media-linkedin {
+        height: 55px;
+        width: 55px;
+        transform: translateY(-1px);
+    }
+    .fa-facebook {
+        color: #3B5998;
+        font-size: 50px;
+        transform: translateY(-10px);
+    }
+    .social-media-bar {
+        position: fixed;
+        bottom: 0%;
+        transform: translateX(20px);
+    }
+    .icon-bar #social-media {
+        display: inline-block;
+        text-align: center;
+        padding: 30px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+    .fa-newspaper {
+        transform: rotate(21deg) translateX(-7px) translateY(1px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-app-store {
+        transform: rotate(61deg) translateX(-23px) translateY(-3px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-search {
+        transform: rotate(100.5deg) translateX(-40px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-barcode {
+        transform: rotate(140deg) translateX(-51px) translateY(17px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-shopping-cart {
+        transform: rotate(179deg) translateX(-59px) translateY(37px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-binoculars {
+        transform: rotate(219deg) translateX(-37px) translateY(47px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-user-friends {
+        transform: rotate(259deg) translateX(-25px) translateY(55px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-address-card {
+        transform: rotate(300deg) translateX(-4px) translateY(43px);
+        transform-origin: bottom left;
+        color: black;
+    }
+    .fa-search-plus {
+        transform: rotate(340deg) translateX(2px) translateY(20px);
+        transform-origin: bottom left;
+        color: black;
+    }
+}
+
+/* Animations */
+@keyframes opacity-appear {
+    0% {
+      opacity: 0;  
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes bgcolor {
+    0% {background-color: #FFADAE;}
+    12% {background-color: #FFCE99;}
+    25% {background-color: #FFF7A2;}
+    37% {background-color: #DDFFA9;}
+    50% {background-color: #C9FFF1;}
+    62% {background-color: #C2E8FB;}
+    75% {background-color: #CADAFE;}
+    87% {background-color: #D9BDED;}
+    100% {background-color: #FEB2D0;}    
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=width, initial-scale=1">
+        <link rel="stylesheet" href="aboutPage.css">
+        <style>@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');</style>
+        <script src="https://kit.fontawesome.com/c15211b786.js"></script>
+        <title>Allerio Pages!</title>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+    </head>
+<body>
+    <div>
+        <div id="nav-bar">
+            <a href="home.html"><img class="allerio-logo" src="img/transparent_logo.png" height="100px" width="100px"></a>
+
+            <!--<button class="menu-btn" onclick="openNav()">&#9776;</button>-->
+            <div class="bento-positioning">
+                <div class="bento-menu" onclick="openNav()">
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                    <span class="bento-dot"></span>
+                </div>
+            </div>
+        
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <li class="category" id="redOpt">
+                <a href="newsPage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-newspaper"></i>Food Safety / News</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesRed.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="orangeOpt">
+                <a href="appPage.html" class="dropdown-btn"><i id="iconsMenu" class="fab fa-app-store"></i>Allerio App</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesOrange.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="yellowOpt">
+                <a href="searchPage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-search"></i>Search</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesYellow.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="goldenOpt">
+                <a href="scanPage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-barcode"></i>Scan History</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesGolden.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="lightGreenOpt">
+                <a href="shoppingPage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-shopping-cart"></i>Shopping</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesLightGreen.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="lightBlueOpt">
+                <a href="explorePage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-binoculars"></i>Explore</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesLightBlue.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="lavenderOpt">
+                <a href="socialPage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-user-friends"></i>Community</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesLavender.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="violetOpt">
+                <a href="aboutPage.html" class="dropdown-btn"><i id="iconsMenu" class="far fa-address-card"></i>About Allerio</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesViolet.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+
+            <li class="category" id="pinkOpt">
+                <a href="morePage.html" class="dropdown-btn"><i id="iconsMenu" class="fas fa-search-plus"></i>More Options</a><!--
+                <div class="dropdown-container">
+                    <a class="dropdown-links" href="pagesPink.html">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                    <a class="dropdown-links" href="#">Sub-category</a>
+                </div>-->
+            </li>
+            
+            <div class="icon-bar">
+                <a href="https://www.facebook.com/alleriolife/" target="_blank" class="socialSite"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/alleriolife" target="_blank" class="socialSite"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/allerio/" target="_blank" class="socialSite"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            
+        </div>
+        
+
+        <div class="CategoryViolet">
+            
+            <div class="pic-box" style="margin-top: 75px;">
+                <h1>Maybe a Allerio-related picture with our slogan/motto</h1>
+            </div>
+            <div class="section" style="margin-top: 475px;">
+                <h1 class="title">Our Mission Statement</h1>
+                <p class="text-box">
+                        Lorem ipsum dolor sit amet, solet dicant eam cu. Ad mea choro essent, ea verterem antiopam sit. 
+                    Cum tantas splendide ut. Et eam agam adipisci. Scripta corpora duo an. Nulla aperiam te vim. 
+                    Ea qui case legere mollis, ex integre appetere sea. Mea suas labore ad. Diam porro legere vis ut, 
+                    pri id impedit officiis volutpat. A
+                <br>
+                <br>
+                        n dolorum probatus suscipiantur eos, iudico dictas ne pro. Eros malis doming te vix, an stet 
+                    delicatissimi his, cu reque nullam voluptua mel. Sea eu esse eirmod, ea pro meis splendide, putent 
+                    ocurreret referrentur sed at. Per ea timeam officiis, mei et diam adhuc disputando, ale postea 
+                    nusquam sea id.
+                <br> 
+                <br>
+                        Nam vocibus imperdiet ea, his cu movet legimus. Et has qualisque dissentiet, adolescens 
+                    conclusionemque et qui. Dolorum tacimates ad vim, per elit complectitur ex, tale salutandi maiestatis
+                    ut ius. No est brute neglegentur, dictas aliquando ullamcorper eum an. Nulla omittam suscipit at mel.
+                    Habeo laudem appetere ea quo, detracto offendit deterruisset te eos, purto intellegebat ea vix. 
+                    Ad eos tritani oportere sadipscing, eu adipisci dissentiunt mei. Vis zril essent deseruisse ne, 
+                    no dictas equidem eam. Id meis epicuri sed, id sed corpora voluptatibus. Mutat ignota 
+                    necessitatibus ut vel, falli iisque cu mei. Dico reque fastidii duo te, vix no sint nusquam, 
+                    ad augue dissentiunt eam. Mei fugit oratio incorrupte ea. His eu porro possit. No prima dolore 
+                    nullam qui, ea sea veniam verterem, prima insolens quo ut. Ei his veri facer, an erant consul per.
+                </p>
+            </div>
+            <div class="pic-box" style="margin-top: 1000px;">
+                <h1>Picture of us</h1>
+            </div>
+            <div class="section" style="margin-top: 1400px;">
+                <h1 class="title">Our Company</h1>
+                <div class="left-text-box">
+                    <div class="you-image"></div>
+                    <p style="text-align: center;">Name</p>
+                    <p style="padding: 0px 10px 0px 10px;">
+                    n dolorum probatus suscipiantur eos, iudico dictas ne pro. Eros malis doming te vix, an stet 
+                    delicatissimi his, cu reque nullam voluptua mel. Sea eu esse eirmod, ea pro meis splendide, putent 
+                    ocurreret referrentur sed at. Per ea timeam officiis, mei et diam adhuc disputando, ale postea 
+                    nusquam sea id.
+                    <br>
+                    </p>
+                    <div class="you-image"></div>
+                    <p style="text-align: center;">Name</p>
+                    <p style="padding: 0px 10px 0px 10px;">
+                    n dolorum probatus suscipiantur eos, iudico dictas ne pro. Eros malis doming te vix, an stet 
+                    delicatissimi his, cu reque nullam voluptua mel. Sea eu esse eirmod, ea pro meis splendide, putent 
+                    ocurreret referrentur sed at. Per ea timeam officiis, mei et diam adhuc disputando, ale postea 
+                    nusquam sea id.
+                    <br>
+                    </p>
+                    <div class="you-image"></div>
+                    <p style="text-align: center;">Name</p>
+                    <p style="padding: 0px 10px 0px 10px;">
+                    n dolorum probatus suscipiantur eos, iudico dictas ne pro. Eros malis doming te vix, an stet 
+                    delicatissimi his, cu reque nullam voluptua mel. Sea eu esse eirmod, ea pro meis splendide, putent 
+                    ocurreret referrentur sed at. Per ea timeam officiis, mei et diam adhuc disputando, ale postea 
+                    nusquam sea id.
+                    <br>
+                    </p>
+                    <div class="you-image"></div>
+                    <p style="text-align: center;">Name</p>
+                    <p style="padding: 0px 10px 0px 10px;">
+                    n dolorum probatus suscipiantur eos, iudico dictas ne pro. Eros malis doming te vix, an stet 
+                    delicatissimi his, cu reque nullam voluptua mel. Sea eu esse eirmod, ea pro meis splendide, putent 
+                    ocurreret referrentur sed at. Per ea timeam officiis, mei et diam adhuc disputando, ale postea 
+                    nusquam sea id.
+                    <br>
+                    </p>
+                    <div class="you-image"></div>
+                    <p style="text-align: center;">Name</p>
+                    <p style="padding: 0px 10px 0px 10px;">
+                    n dolorum probatus suscipiantur eos, iudico dictas ne pro. Eros malis doming te vix, an stet 
+                    delicatissimi his, cu reque nullam voluptua mel. Sea eu esse eirmod, ea pro meis splendide, putent 
+                    ocurreret referrentur sed at. Per ea timeam officiis, mei et diam adhuc disputando, ale postea 
+                    nusquam sea id.
+                    <br>
+                    </p>
+                </div>
+                <div class="right-text-box">
+                    <div class="you-image"></div>
+                    <p style="text-align: center;">Name</p>
+                    <p style="padding: 0px 10px 0px 10px;">
+                    n dolorum probatus suscipiantur eos, iudico dictas ne pro. Eros malis doming te vix, an stet 
+                    delicatissimi his, cu reque nullam voluptua mel. Sea eu esse eirmod, ea pro meis splendide, putent 
+                    ocurreret referrentur sed at. Per ea timeam officiis, mei et diam adhuc disputando, ale postea 
+                    nusquam sea id.
+                    <br>
+                    </p>
+                    <div class="you-image"></div>
+                    <p style="text-align: center;">Name</p>
+                    <p style="padding: 0px 10px 0px 10px;">
+                    n dolorum probatus suscipiantur eos, iudico dictas ne pro. Eros malis doming te vix, an stet 
+                    delicatissimi his, cu reque nullam voluptua mel. Sea eu esse eirmod, ea pro meis splendide, putent 
+                    ocurreret referrentur sed at. Per ea timeam officiis, mei et diam adhuc disputando, ale postea 
+                    nusquam sea id.
+                    <br>
+                    </p>
+                    <div class="you-image"></div>
+                    <p style="text-align: center;">Name</p>
+                    <p style="padding: 0px 10px 0px 10px;">
+                    n dolorum probatus suscipiantur eos, iudico dictas ne pro. Eros malis doming te vix, an stet 
+                    delicatissimi his, cu reque nullam voluptua mel. Sea eu esse eirmod, ea pro meis splendide, putent 
+                    ocurreret referrentur sed at. Per ea timeam officiis, mei et diam adhuc disputando, ale postea 
+                    nusquam sea id.
+                    <br>
+                    </p>
+                    <div class="you-image"></div>
+                    <p style="text-align: center;">Name</p>
+                    <p style="padding: 0px 10px 0px 10px;">
+                    n dolorum probatus suscipiantur eos, iudico dictas ne pro. Eros malis doming te vix, an stet 
+                    delicatissimi his, cu reque nullam voluptua mel. Sea eu esse eirmod, ea pro meis splendide, putent 
+                    ocurreret referrentur sed at. Per ea timeam officiis, mei et diam adhuc disputando, ale postea 
+                    nusquam sea id.
+                    <br>
+                    </p>
+                    <div class="you-image"></div>
+                    <p style="text-align: center;">Name</p>
+                    <p style="padding: 0px 10px 0px 10px;">
+                    n dolorum probatus suscipiantur eos, iudico dictas ne pro. Eros malis doming te vix, an stet 
+                    delicatissimi his, cu reque nullam voluptua mel. Sea eu esse eirmod, ea pro meis splendide, putent 
+                    ocurreret referrentur sed at. Per ea timeam officiis, mei et diam adhuc disputando, ale postea 
+                    nusquam sea id.
+                    <br>
+                    </p>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <!--<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-alt-circle-up"></i></button>-->
+
+    </div>
+
+<script>
+
+document.addEventListener("touchstart", function(){}, true);
+
+function openNav() {
+  /*
+  document.getElementById("mySidenav").style.width = "300px";
+
+  document.getElementById("mySidenav").style.display = "block";
+  */
+  document.getElementById("mySidenav").style.right = "0px";
+  
+}
+
+function closeNav() {
+  /*
+  document.getElementById("mySidenav").style.width = "0";
+
+  document.getElementById("mySidenav").style.display = "none";
+  */
+  document.getElementById("mySidenav").style.right = "-350px";
+  
+}
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+</script>
+
+</body>
+</html>

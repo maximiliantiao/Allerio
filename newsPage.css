@@ -1,0 +1,2736 @@
+body {
+    margin: 0px;
+}
+
+/* iPhone 5s and older PORTRAIT */
+@media only screen and (min-device-width: 200px) and (max-device-width: 329px) and (orientation: portrait) {
+    html {
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    #nav-bar {
+        background-color: white;
+        overflow: hidden;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    #nav-bar .allerio-logo {
+        margin-top: 5px;
+        height: 68px;
+        width: 102px;
+    }
+    /*
+    .menu-btn {
+        float: right;
+        font-size: 40px;
+        margin-right: 200px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    */
+    #nav-bar .bento-positioning {
+        position: relative;
+        float: right;
+        margin-right: 60px;
+        margin-top: 15px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .bento-menu {
+        width: 43px;
+        height: 43px;
+        top: 10%;
+        left: 25%;
+        position: absolute;
+        cursor: pointer;
+    }
+    .bento-dot {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+    .bento-menu span:nth-child(1) {
+        top: 0;
+        left: 0;
+        background-color: #FFADAE;
+    }
+    .bento-menu span:nth-child(2) {
+    	top: 0;
+    	left: 15px;
+        background-color: #FFCE99;
+    }
+    .bento-menu span:nth-child(3) {
+    	top: 0;
+    	left: 30px;
+        background-color: #FFF7A2;
+    }
+    .bento-menu span:nth-child(4) {
+    	top: 15px;
+    	left: 0;
+        background-color: #DDFFA9;
+    }
+    .bento-menu span:nth-child(5) {
+    	top: 15px;
+    	left: 15px;
+        background-color: #C9FFF1;
+    }
+    .bento-menu span:nth-child(6) {
+    	top: 15px;
+    	left: 30px;
+        background-color: #C2E8FB;
+    }
+    .bento-menu span:nth-child(7) {
+    	top: 30px;
+    	left: 0;
+        background-color: #CADAFE;
+    }
+    .bento-menu span:nth-child(8) {
+    	top: 30px;
+    	left: 15px;
+        background-color: #D9BDED;
+    }
+    .bento-menu span:nth-child(9) {
+    	top: 30px;
+    	left: 30px;
+        background-color: #FEB2D0;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: -250px;
+        background-color: white;
+        overflow: hidden;
+        transition: 0.5s;
+        padding-top: 35px;
+        /*display: none;*/
+    }
+    .category {
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .closebtn {
+        color: black;
+    }
+    .dropdown-btn {
+        display: block;
+        padding: 5px 10px 5px 10px;
+        background: white;
+        color: black;
+        position: relative;
+        font-size: 17px;
+        text-decoration: none;
+    } 
+    .dropdown-btn #iconsMenu {
+        margin-right: 15px;
+        font-size: 14px;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        font-size: 35px;
+        margin-left: 50px;
+        text-decoration: none;
+    }
+    .dropdown-container {
+        background-color: white;
+        max-height: 0px;
+        transition: max-height 0.3s;
+        overflow: hidden;
+    }
+    .dropdown-container .dropdown-links {
+        display: block;
+        padding: 5px 50px;
+        color: black;
+        position: relative;
+        font-size: 13px;
+        text-decoration: none;
+    }
+    .category:target .dropdown-container {
+        max-height: 6em;
+    }
+    li:nth-of-type(1):active .dropdown-btn {
+        background: #FFADAE;
+    }
+    li:nth-of-type(2):active .dropdown-btn {
+        background: #FFCE99;
+    }
+    li:nth-of-type(3):active .dropdown-btn {
+        background: #FFF7A2;
+    }
+    li:nth-of-type(4):active .dropdown-btn {
+        background: #DDFFA9;
+    }
+    li:nth-of-type(5):active .dropdown-btn {
+        background: #C9FFF1;
+    }
+    li:nth-of-type(6):active .dropdown-btn {
+        background: #C2E8FB;
+    }
+    li:nth-of-type(7):active .dropdown-btn {
+        background: #CADAFE;
+    }
+    li:nth-of-type(8):active .dropdown-btn {
+        background: #D9BDED;
+    }
+    li:nth-of-type(9):active .dropdown-btn {
+        background: #FEB2D0;
+    }
+    /*
+    .category:target .dropdown-btn {
+        background: black;
+    }
+    */
+    .fa-newspaper, .fa-app-store, .fa-search, .fa-barcode, .fa-shopping-cart, .fa-search-plus, .fa-user-friends, .fa-address-card, .fa-plus-circle {
+        float: left;
+        padding-top: 6px;
+    }
+    .CategoryRed {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFADAE;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryOrange {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFCE99;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryYellow {
+        height: 200px;
+        transform: translateY(50px);
+        background-color: #FFF7A2;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryGolden {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #DDFFA9;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLightGreen {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C9FFF1;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLightBlue {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C2E8FB;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLavender {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #CADAFE;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryViolet {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #D9BDED;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryPink {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FEB2D0;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /*Remove borders */
+        outline: none; /*Remove outline */
+        background-color: white; /*Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover  */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 40px; /* Increase font size */
+    }
+    .fa-arrow-alt-circle-up {
+        color: red;
+        font-size: 60px; /* Increase font size */
+    }
+    .icon-bar {
+        position: relative;
+        bottom: -8px;
+        width: 100%;
+        /*text-align: center;*/
+        padding-left: 10px;
+    }
+    .socialSite {
+        color: white;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    .fa-facebook, .fa-twitter, .fa-linkedin-in {
+        font-size: 20px;
+        color: #333333;
+    }
+    .icon-bar a {
+        background: #cccccc;
+    }
+}
+
+/* iPhone 5s and older LANDSCAPE */
+@media only screen and (min-width: 100px) and (max-width: 499px) and (orientation: landscape) {
+    html {
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    #nav-bar {
+        background-color: white;
+        padding-bottom: 10px;
+        overflow: hidden;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    #nav-bar .allerio-logo {
+        margin-top: 10px;
+        height: 60px;
+        width: 90px;
+    }
+    /*
+    .menu-btn {
+        float: right;
+        font-size: 40px;
+        margin-right: 200px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    */
+    #nav-bar .bento-positioning {
+        position: relative;
+        float: right;
+        margin-right: 60px;
+        margin-top: 18px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .bento-menu {
+        width: 43px;
+        height: 43px;
+        top: 10%;
+        left: 25%;
+        position: absolute;
+        cursor: pointer;
+    }
+    .bento-dot {
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+    }
+    .bento-menu span:nth-child(1) {
+        top: 0;
+        left: 0;
+        background-color: #FFADAE;
+    }
+    .bento-menu span:nth-child(2) {
+    	top: 0;
+    	left: 15px;
+        background-color: #FFCE99;
+    }
+    .bento-menu span:nth-child(3) {
+    	top: 0;
+    	left: 30px;
+        background-color: #FFF7A2;
+    }
+    .bento-menu span:nth-child(4) {
+    	top: 15px;
+    	left: 0;
+        background-color: #DDFFA9;
+    }
+    .bento-menu span:nth-child(5) {
+    	top: 15px;
+    	left: 15px;
+        background-color: #C9FFF1;
+    }
+    .bento-menu span:nth-child(6) {
+    	top: 15px;
+    	left: 30px;
+        background-color: #C2E8FB;
+    }
+    .bento-menu span:nth-child(7) {
+    	top: 30px;
+    	left: 0;
+        background-color: #CADAFE;
+    }
+    .bento-menu span:nth-child(8) {
+    	top: 30px;
+    	left: 15px;
+        background-color: #D9BDED;
+    }
+    .bento-menu span:nth-child(9) {
+    	top: 30px;
+    	left: 30px;
+        background-color: #FEB2D0;
+    }
+    
+    .sidenav {
+        position: fixed;
+        width: 350px;
+        z-index: 1000;
+        top: 0;
+        right: -350px;
+        background-color: white;
+        overflow-y: auto;
+        transition: 0.5s;
+        padding-top: 40px;
+        max-height: calc(100% - 40px);
+        /*display: none;*/
+    }
+    .category {
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .closebtn {
+        color: black;
+    }
+    .dropdown-btn {
+        display: block;
+        padding: 3px 5px 3px 3px;
+        background: white;
+        color: black;
+        position: relative;
+        font-size: 13px;
+        text-decoration: none;
+    } 
+    #iconsMenu {
+        transform: translateY(-3px);
+    }
+    .dropdown-btn #iconsMenu {
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: -10px;
+        right: 20px;
+        font-size: 35px;
+        margin-left: 50px;
+        text-decoration: none;
+    }
+    .dropdown-container {
+        background-color: white;
+        max-height: 0px;
+        transition: max-height 0.3s;
+        overflow: hidden;
+    }
+    .dropdown-container .dropdown-links {
+        display: block;
+        padding: 2px 30px;
+        color: black;
+        margin: 2px 0px;
+        position: relative;
+        font-size: 10px;
+        text-decoration: none;
+    }
+    .category:target .dropdown-container {
+        max-height: 5em;
+    }
+    li:nth-of-type(1):active .dropdown-btn {
+        background: #FFADAE;
+    }
+    li:nth-of-type(2):active .dropdown-btn {
+        background: #FFCE99;
+    }
+    li:nth-of-type(3):active .dropdown-btn {
+        background: #FFF7A2;
+    }
+    li:nth-of-type(4):active .dropdown-btn {
+        background: #DDFFA9;
+    }
+    li:nth-of-type(5):active .dropdown-btn {
+        background: #C9FFF1;
+    }
+    li:nth-of-type(6):active .dropdown-btn {
+        background: #C2E8FB;
+    }
+    li:nth-of-type(7):active .dropdown-btn {
+        background: #CADAFE;
+    }
+    li:nth-of-type(8):active .dropdown-btn {
+        background: #D9BDED;
+    }
+    li:nth-of-type(9):active .dropdown-btn {
+        background: #FEB2D0;
+    }
+    /*
+    .category:target .dropdown-btn {
+        background: black;
+    }
+    */
+    .fa-newspaper, .fa-app-store, .fa-search, .fa-barcode, .fa-shopping-cart, .fa-search-plus, .fa-user-friends, .fa-address-card, .fa-plus-circle {
+        float: left;
+        padding-top: 6px;
+    }
+    .CategoryRed {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFADAE;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryOrange {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFCE99;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryYellow {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFF7A2;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryGolden {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #DDFFA9;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLightGreen {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C9FFF1;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLightBlue {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C2E8FB;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLavender {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #CADAFE;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryViolet {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #D9BDED;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryPink {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FEB2D0;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /*Remove borders */
+        outline: none; /*Remove outline */
+        background-color: white; /*Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover  */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 40px; /* Increase font size */
+    }
+    .fa-arrow-alt-circle-up {
+        color: red;
+        font-size: 60px; /* Increase font size */
+    }
+    .icon-bar {
+        position: relative;
+        bottom: -10px;
+        width: 100%;
+        /*text-align: center;*/
+        padding-left: 10px;
+    }
+    .socialSite {
+        color: white;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    .fa-facebook, .fa-twitter, .fa-linkedin-in {
+        font-size: 20px;
+        color: #333333;
+    }
+    .icon-bar a {
+        background: #cccccc;
+    }
+}
+
+/* iPhone 6, 6s, 7, 8, XS, X PORTRAIT */
+@media only screen and (min-width: 330px) and (max-width: 375px) and (orientation: portrait)  {
+    html {
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    #nav-bar {
+        background-color: white;
+        padding-bottom: 10px;
+        overflow: hidden;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .allerio-logo {
+        height: 70px;
+        width: 110px;
+    }
+    #nav-bar .allerio-logo {
+        margin-top: 10px;
+    }
+    /*
+    .menu-btn {
+        float: right;
+        font-size: 40px;
+        margin-right: 200px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    */
+    #nav-bar .bento-positioning {
+        position: relative;
+        float: right;
+        margin-right: 60px;
+        margin-top: 15px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .bento-menu {
+        width: 55px;
+        height: 55px;
+        top: 10%;
+        left: 25%;
+        position: absolute;
+        cursor: pointer;
+    }
+    .bento-dot {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+    .bento-menu span:nth-child(1) {
+        top: 0;
+        left: 0;
+        background-color: #FFADAE;
+    }
+    .bento-menu span:nth-child(2) {
+    	top: 0;
+    	left: 20px;
+        background-color: #FFCE99;
+    }
+    .bento-menu span:nth-child(3) {
+    	top: 0;
+    	left: 40px;
+        background-color: #FFF7A2;
+    }
+    .bento-menu span:nth-child(4) {
+    	top: 20px;
+    	left: 0;
+        background-color: #DDFFA9;
+    }
+    .bento-menu span:nth-child(5) {
+    	top: 20px;
+    	left: 20px;
+        background-color: #C9FFF1;
+    }
+    .bento-menu span:nth-child(6) {
+    	top: 20px;
+    	left: 40px;
+        background-color: #C2E8FB;
+    }
+    .bento-menu span:nth-child(7) {
+    	top: 40px;
+    	left: 0;
+        background-color: #CADAFE;
+    }
+    .bento-menu span:nth-child(8) {
+    	top: 40px;
+    	left: 20px;
+        background-color: #D9BDED;
+    }
+    .bento-menu span:nth-child(9) {
+    	top: 40px;
+    	left: 40px;
+        background-color: #FEB2D0;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: -300px;
+        background-color: white;
+        overflow: hidden;
+        transition: 0.5s;
+        padding-top: 40px;
+        /*display: none;*/
+    }
+    .category {
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .closebtn {
+        color: black;
+    }
+    .dropdown-btn {
+        display: block;
+        padding: 8px 15px 8px 15px;
+        background: white;
+        color: black;
+        position: relative;
+        font-size: 18px;
+        text-decoration: none;
+    } 
+    .dropdown-btn #iconsMenu {
+        margin-right: 15px;
+        font-size: 20px;
+        margin-top: -4px;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: -15px;
+        right: 20px;
+        font-size: 50px;
+        margin-left: 50px;
+        text-decoration: none;
+    }
+    .dropdown-container {
+        background-color: white;
+        max-height: 0px;
+        transition: max-height 0.3s;
+        overflow: hidden;
+    }
+    .dropdown-container .dropdown-links {
+        display: block;
+        padding: 6px 60px;
+        color: black;
+        position: relative;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .category:target .dropdown-container {
+        max-height: 6em;
+    }
+    li:nth-of-type(1):active .dropdown-btn {
+        background: #FFADAE;
+    }
+    li:nth-of-type(2):active .dropdown-btn {
+        background: #FFCE99;
+    }
+    li:nth-of-type(3):active .dropdown-btn {
+        background: #FFF7A2;
+    }
+    li:nth-of-type(4):active .dropdown-btn {
+        background: #DDFFA9;
+    }
+    li:nth-of-type(5):active .dropdown-btn {
+        background: #C9FFF1;
+    }
+    li:nth-of-type(6):active .dropdown-btn {
+        background: #C2E8FB;
+    }
+    li:nth-of-type(7):active .dropdown-btn {
+        background: #CADAFE;
+    }
+    li:nth-of-type(8):active .dropdown-btn {
+        background: #D9BDED;
+    }
+    li:nth-of-type(9):active .dropdown-btn {
+        background: #FEB2D0;
+    }
+    /*
+    .category:target .dropdown-btn {
+        background: black;
+    }
+    */
+    .fa-newspaper, .fa-app-store, .fa-search, .fa-barcode, .fa-shopping-cart, .fa-search-plus, .fa-user-friends, .fa-address-card, .fa-plus-circle {
+        float: left;
+        padding-top: 6px;
+    }
+    .CategoryRed {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFADAE;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryOrange {
+        height: 200px;
+        transform: translateY(50px);
+        background-color: #FFCE99;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryYellow {
+        height: 200px;
+        transform: translateY(50px);
+        background-color: #FFF7A2;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryGolden {
+        height: 200px;
+        transform: translateY(50px);
+        background-color: #DDFFA9;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryLightGreen {
+        height: 200px;
+        transform: translateY(50px);
+        background-color: #C9FFF1;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryLightBlue {
+        height: 200px;
+        transform: translateY(50px);
+        background-color: #C2E8FB;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryLavender {
+        height: 200px;
+        transform: translateY(50px);
+        background-color: #CADAFE;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryViolet {
+        height: 200px;
+        transform: translateY(50px);
+        background-color: #D9BDED;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryPink {
+        height: 200px;
+        transform: translateY(50px);
+        background-color: #FEB2D0;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /*Remove borders */
+        outline: none; /*Remove outline */
+        background-color: white; /*Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover  */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 40px; /* Increase font size */
+    }
+    .fa-arrow-alt-circle-up {
+        color: red;
+        font-size: 60px; /* Increase font size */
+    }
+    .icon-bar {
+        position: relative;
+        bottom: -15px;
+        width: 100%;
+        /*text-align: center;*/
+        padding-left: 15px;
+    }
+    .socialSite {
+        color: white;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    .fa-facebook, .fa-twitter, .fa-linkedin-in {
+        font-size: 25px;
+        color: #333333;
+    }
+    .icon-bar a {
+        background: #cccccc;
+    }
+}
+
+/* iPhone SE, 6, 6s, 7, 8 LANDSCAPE */
+@media only screen and (min-width: 500px) and (max-width: 699px) and (orientation: landscape) {
+    html {
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    #nav-bar {
+        background-color: white;
+        padding-bottom: 10px;
+        overflow: hidden;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    #nav-bar .allerio-logo {
+        margin-top: 10px;
+        height: 60px;
+        width: 90px;
+    }
+    /*
+    .menu-btn {
+        float: right;
+        font-size: 40px;
+        margin-right: 200px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    */
+    #nav-bar .bento-positioning {
+        position: relative;
+        float: right;
+        margin-right: 60px;
+        margin-top: 18px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .bento-menu {
+        width: 43px;
+        height: 43px;
+        top: 10%;
+        left: 25%;
+        position: absolute;
+        cursor: pointer;
+    }
+    .bento-dot {
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+    }
+    .bento-menu span:nth-child(1) {
+        top: 0;
+        left: 0;
+        background-color: #FFADAE;
+    }
+    .bento-menu span:nth-child(2) {
+    	top: 0;
+    	left: 15px;
+        background-color: #FFCE99;
+    }
+    .bento-menu span:nth-child(3) {
+    	top: 0;
+    	left: 30px;
+        background-color: #FFF7A2;
+    }
+    .bento-menu span:nth-child(4) {
+    	top: 15px;
+    	left: 0;
+        background-color: #DDFFA9;
+    }
+    .bento-menu span:nth-child(5) {
+    	top: 15px;
+    	left: 15px;
+        background-color: #C9FFF1;
+    }
+    .bento-menu span:nth-child(6) {
+    	top: 15px;
+    	left: 30px;
+        background-color: #C2E8FB;
+    }
+    .bento-menu span:nth-child(7) {
+    	top: 30px;
+    	left: 0;
+        background-color: #CADAFE;
+    }
+    .bento-menu span:nth-child(8) {
+    	top: 30px;
+    	left: 15px;
+        background-color: #D9BDED;
+    }
+    .bento-menu span:nth-child(9) {
+    	top: 30px;
+    	left: 30px;
+        background-color: #FEB2D0;
+    }
+    
+    .sidenav {
+        position: fixed;
+        height: 200%;
+        width: 350px;
+        z-index: 1000;
+        top: 0;
+        right: -350px;
+        background-color: white;
+        overflow-y: auto;
+        transition: 0.5s;
+        padding-top: 40px;
+        /*display: none;*/
+    }
+    .category {
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .closebtn {
+        color: black;
+    }
+    .dropdown-btn {
+        display: block;
+        padding: 3px 5px 3px 3px;
+        background: white;
+        color: black;
+        position: relative;
+        font-size: 15px;
+        text-decoration: none;
+    } 
+    #iconsMenu {
+        transform: translateY(-3px);
+    }
+    .dropdown-btn #iconsMenu {
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: -10px;
+        right: 20px;
+        font-size: 35px;
+        margin-left: 50px;
+        text-decoration: none;
+    }
+    .dropdown-container {
+        background-color: white;
+        max-height: 0px;
+        transition: max-height 0.3s;
+        overflow: hidden;
+    }
+    .dropdown-container .dropdown-links {
+        display: block;
+        padding: 2px 40px;
+        color: black;
+        margin: 2px 0px;
+        position: relative;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    .category:target .dropdown-container {
+        max-height: 5em;
+    }
+    li:nth-of-type(1):active .dropdown-btn {
+        background: #FFADAE;
+    }
+    li:nth-of-type(2):active .dropdown-btn {
+        background: #FFCE99;
+    }
+    li:nth-of-type(3):active .dropdown-btn {
+        background: #FFF7A2;
+    }
+    li:nth-of-type(4):active .dropdown-btn {
+        background: #DDFFA9;
+    }
+    li:nth-of-type(5):active .dropdown-btn {
+        background: #C9FFF1;
+    }
+    li:nth-of-type(6):active .dropdown-btn {
+        background: #C2E8FB;
+    }
+    li:nth-of-type(7):active .dropdown-btn {
+        background: #CADAFE;
+    }
+    li:nth-of-type(8):active .dropdown-btn {
+        background: #D9BDED;
+    }
+    li:nth-of-type(9):active .dropdown-btn {
+        background: #FEB2D0;
+    }
+    /*
+    .category:target .dropdown-btn {
+        background: black;
+    }
+    */
+    .fa-newspaper, .fa-app-store, .fa-search, .fa-barcode, .fa-shopping-cart, .fa-search-plus, .fa-user-friends, .fa-address-card, .fa-plus-circle {
+        float: left;
+        padding-top: 6px;
+    }
+    .CategoryRed {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFADAE;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryOrange {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFCE99;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryYellow {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFF7A2;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryGolden {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #DDFFA9;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLightGreen {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C9FFF1;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLightBlue {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C2E8FB;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLavender {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #CADAFE;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryViolet {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #D9BDED;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryPink {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FEB2D0;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /*Remove borders */
+        outline: none; /*Remove outline */
+        background-color: white; /*Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover  */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 40px; /* Increase font size */
+    }
+    .fa-arrow-alt-circle-up {
+        color: red;
+        font-size: 60px; /* Increase font size */
+    }
+    .icon-bar {
+        position: relative;
+        bottom: -5px;
+        width: 100%;
+        /*text-align: center;*/
+        padding-left: 10px;
+    }
+    .socialSite {
+        color: white;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    .fa-facebook, .fa-twitter, .fa-linkedin-in {
+        font-size: 20px;
+        color: #333333;
+    }
+    .icon-bar a {
+        background: #cccccc;
+    }
+}
+
+/* iPhone XR, XS Max, 6+, 6s+, 7+, 8+ PORTRAIT */
+@media only screen and (min-width: 376px) and (max-width: 749px) and (orientation: portrait)  {
+   html {
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    #nav-bar {
+        background-color: white;
+        padding-bottom: 10px;
+        overflow: hidden;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .allerio-logo {
+        height: 75px;
+        width: 110px;
+    }
+    #nav-bar .allerio-logo {
+        margin-top: 10px;
+    }
+    /*
+    .menu-btn {
+        float: right;
+        font-size: 40px;
+        margin-right: 200px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    */
+    #nav-bar .bento-positioning {
+        position: relative;
+        float: right;
+        margin-right: 60px;
+        margin-top: 15px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .bento-menu {
+        width: 55px;
+        height: 55px;
+        top: 10%;
+        left: 25%;
+        position: absolute;
+        cursor: pointer;
+    }
+    .bento-dot {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+    .bento-menu span:nth-child(1) {
+        top: 0;
+        left: 0;
+        background-color: #FFADAE;
+    }
+    .bento-menu span:nth-child(2) {
+    	top: 0;
+    	left: 20px;
+        background-color: #FFCE99;
+    }
+    .bento-menu span:nth-child(3) {
+    	top: 0;
+    	left: 40px;
+        background-color: #FFF7A2;
+    }
+    .bento-menu span:nth-child(4) {
+    	top: 20px;
+    	left: 0;
+        background-color: #DDFFA9;
+    }
+    .bento-menu span:nth-child(5) {
+    	top: 20px;
+    	left: 20px;
+        background-color: #C9FFF1;
+    }
+    .bento-menu span:nth-child(6) {
+    	top: 20px;
+    	left: 40px;
+        background-color: #C2E8FB;
+    }
+    .bento-menu span:nth-child(7) {
+    	top: 40px;
+    	left: 0;
+        background-color: #CADAFE;
+    }
+    .bento-menu span:nth-child(8) {
+    	top: 40px;
+    	left: 20px;
+        background-color: #D9BDED;
+    }
+    .bento-menu span:nth-child(9) {
+    	top: 40px;
+    	left: 40px;
+        background-color: #FEB2D0;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: -300px;
+        background-color: white;
+        overflow: hidden;
+        transition: 0.5s;
+        padding-top: 40px;
+        /*display: none;*/
+    }
+    .category {
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .closebtn {
+        color: black;
+    }
+    .dropdown-btn {
+        display: block;
+        padding: 10px 15px 10px 15px;
+        background: white;
+        color: black;
+        position: relative;
+        font-size: 20px;
+        text-decoration: none;
+    } 
+    .dropdown-btn #iconsMenu {
+        margin-right: 15px;
+        font-size: 20px;
+        margin-top: -4px;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: -15px;
+        right: 20px;
+        font-size: 50px;
+        margin-left: 50px;
+        text-decoration: none;
+    }
+    .dropdown-container {
+        background-color: white;
+        max-height: 0px;
+        transition: max-height 0.3s;
+        overflow: hidden;
+    }
+    .dropdown-container .dropdown-links {
+        display: block;
+        padding: 7px 60px;
+        color: black;
+        position: relative;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .category:target .dropdown-container {
+        max-height: 7em;
+    }
+    li:nth-of-type(1):active .dropdown-btn {
+        background: #FFADAE;
+    }
+    li:nth-of-type(2):active .dropdown-btn {
+        background: #FFCE99;
+    }
+    li:nth-of-type(3):active .dropdown-btn {
+        background: #FFF7A2;
+    }
+    li:nth-of-type(4):active .dropdown-btn {
+        background: #DDFFA9;
+    }
+    li:nth-of-type(5):active .dropdown-btn {
+        background: #C9FFF1;
+    }
+    li:nth-of-type(6):active .dropdown-btn {
+        background: #C2E8FB;
+    }
+    li:nth-of-type(7):active .dropdown-btn {
+        background: #CADAFE;
+    }
+    li:nth-of-type(8):active .dropdown-btn {
+        background: #D9BDED;
+    }
+    li:nth-of-type(9):active .dropdown-btn {
+        background: #FEB2D0;
+    }
+    /*
+    .category:target .dropdown-btn {
+        background: black;
+    }
+    */
+    .fa-newspaper, .fa-app-store, .fa-search, .fa-barcode, .fa-shopping-cart, .fa-search-plus, .fa-user-friends, .fa-address-card, .fa-plus-circle {
+        float: left;
+        padding-top: 8px;
+    }
+    .CategoryRed {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFADAE;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryOrange {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFCE99;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryYellow {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFF7A2;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryGolden {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #DDFFA9;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLightGreen {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C9FFF1;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLightBlue {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C2E8FB;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLavender {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #CADAFE;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryViolet {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #D9BDED;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryPink {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FEB2D0;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /*Remove borders */
+        outline: none; /*Remove outline */
+        background-color: white; /*Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover  */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 40px; /* Increase font size */
+    }
+    .fa-arrow-alt-circle-up {
+        color: red;
+        font-size: 60px; /* Increase font size */
+    }
+    .icon-bar {
+        position: relative;
+        bottom: -15px;
+        width: 100%;
+        /*text-align: center;*/
+        padding-left: 15px;
+    }
+    .socialSite {
+        color: white;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    .fa-facebook, .fa-twitter, .fa-linkedin-in {
+        font-size: 30px;
+        color: #333333;
+    }
+    .icon-bar a {
+        background: #cccccc;
+    }
+}
+
+/* iPhone X, XS, XR, XS Max, 6+, 6s+, 7+, 8+ LANDSCAPE */
+@media only screen and (min-width: 700px) and (max-width: 809px) and (orientation: landscape)  {
+   html {
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    #nav-bar {
+        background-color: white;
+        padding-bottom: 10px;
+        overflow: hidden;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .allerio-logo {
+        height: 72px;
+        width: 107px;
+    }
+    #nav-bar .allerio-logo {
+        margin-top: 10px;
+    }
+    /*
+    .menu-btn {
+        float: right;
+        font-size: 40px;
+        margin-right: 200px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    */
+    #nav-bar .bento-positioning {
+        position: relative;
+        float: right;
+        margin-right: 60px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    .bento-menu {
+        width: 55px;
+        height: 55px;
+        top: 10%;
+        left: 25%;
+        position: absolute;
+        cursor: pointer;
+    }
+    .bento-dot {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+    .bento-menu span:nth-child(1) {
+        top: 0;
+        left: 0;
+        background-color: #FFADAE;
+    }
+    .bento-menu span:nth-child(2) {
+    	top: 0;
+    	left: 20px;
+        background-color: #FFCE99;
+    }
+    .bento-menu span:nth-child(3) {
+    	top: 0;
+    	left: 40px;
+        background-color: #FFF7A2;
+    }
+    .bento-menu span:nth-child(4) {
+    	top: 20px;
+    	left: 0;
+        background-color: #DDFFA9;
+    }
+    .bento-menu span:nth-child(5) {
+    	top: 20px;
+    	left: 20px;
+        background-color: #C9FFF1;
+    }
+    .bento-menu span:nth-child(6) {
+    	top: 20px;
+    	left: 40px;
+        background-color: #C2E8FB;
+    }
+    .bento-menu span:nth-child(7) {
+    	top: 40px;
+    	left: 0;
+        background-color: #CADAFE;
+    }
+    .bento-menu span:nth-child(8) {
+    	top: 40px;
+    	left: 20px;
+        background-color: #D9BDED;
+    }
+    .bento-menu span:nth-child(9) {
+    	top: 40px;
+    	left: 40px;
+        background-color: #FEB2D0;
+    }
+    
+    .sidenav {
+        position: fixed;
+        width: 350px;
+        z-index: 1000;
+        top: 0;
+        right: -350px;
+        background-color: white;
+        overflow-y: auto;
+        transition: 0.5s;
+        padding-top: 50px;
+        height: 100%;
+        /*display: none;*/
+    }
+    .category {
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .closebtn {
+        color: black;
+    }
+    .dropdown-btn {
+        display: block;
+        padding: 5px 5px 5px 5px;
+        background: white;
+        color: black;
+        position: relative;
+        font-size: 20px;
+        text-decoration: none;
+    } 
+    .dropdown-btn #iconsMenu {
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        font-size: 40px;
+        margin-left: 50px;
+        text-decoration: none;
+    }
+    .dropdown-container {
+        background-color: white;
+        max-height: 0px;
+        transition: max-height 0.3s;
+        overflow: hidden;
+        /*display: none;*/
+    }
+    .dropdown-container .dropdown-links {
+        display: block;
+        padding: 5px 60px;
+        color: black;
+        position: relative;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .category:target .dropdown-container {
+        max-height: 7em;
+    }
+    li:nth-of-type(1):active .dropdown-btn {
+        background: #FFADAE;
+    }
+    li:nth-of-type(2):active .dropdown-btn {
+        background: #FFCE99;
+    }
+    li:nth-of-type(3):active .dropdown-btn {
+        background: #FFF7A2;
+    }
+    li:nth-of-type(4):active .dropdown-btn {
+        background: #DDFFA9;
+    }
+    li:nth-of-type(5):active .dropdown-btn {
+        background: #C9FFF1;
+    }
+    li:nth-of-type(6):active .dropdown-btn {
+        background: #C2E8FB;
+    }
+    li:nth-of-type(7):active .dropdown-btn {
+        background: #CADAFE;
+    }
+    li:nth-of-type(8):active .dropdown-btn {
+        background: #D9BDED;
+    }
+    li:nth-of-type(9):active .dropdown-btn {
+        background: #FEB2D0;
+    }
+    /*
+    .category:target .dropdown-btn {
+        background: black;
+    }
+    */
+    .fa-newspaper, .fa-app-store, .fa-search, .fa-barcode, .fa-shopping-cart, .fa-search-plus, .fa-user-friends, .fa-address-card, .fa-plus-circle {
+        float: left;
+        padding-top: 6px;
+    }
+    .CategoryRed {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFADAE;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryOrange {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFCE99;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryYellow {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFF7A2;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryGolden {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #DDFFA9;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLightGreen {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C9FFF1;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLightBlue {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C2E8FB;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryLavender {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #CADAFE;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryViolet {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #D9BDED;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    .CategoryPink {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FEB2D0;
+        margin: 0px 0px 300px 0px;
+        border-radius: 5px;
+    }
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /*Remove borders */
+        outline: none; /*Remove outline */
+        background-color: white; /*Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover  */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 40px; /* Increase font size */
+    }
+    .fa-arrow-alt-circle-up {
+        color: red;
+        font-size: 60px; /* Increase font size */
+    }
+    .icon-bar {
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        /*text-align: center;*/
+        padding-left: 15px;
+    }
+    .socialSite {
+        color: white;
+        display: inline-block;
+        padding: 15px;
+        border-radius: 50%;
+    }
+    .fa-facebook, .fa-twitter, .fa-linkedin-in {
+        font-size: 20px;
+        color: #333333;
+    }
+    .icon-bar a {
+        background: #cccccc;
+    }
+}
+
+/* iPads PORTRAIT */
+@media only screen and (min-width: 750px) and (max-width: 1280px) and (orientation: portrait) {
+    html {
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    #nav-bar {
+        background-color: white;
+        padding-bottom: 10px;
+        overflow: hidden;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .allerio-logo {
+        height: 90px;
+        width: 140px;
+    }
+    #nav-bar .allerio-logo {
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    /*
+    .menu-btn {
+        float: right;
+        font-size: 40px;
+        margin-right: 200px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    */
+    #nav-bar .bento-positioning {
+        position: relative;
+        float: right;
+        margin-right: 155px;
+        margin-top: 25px;
+        border: none;
+        outline: none;
+    }
+    .bento-menu {
+        width: 55px;
+        height: 55px;
+        top: 10%;
+        left: 25%;
+        position: absolute;
+        cursor: pointer;
+    }
+    .bento-dot {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+    .bento-menu span:nth-child(1) {
+        top: 0;
+        left: 0;
+        background-color: #FFADAE;
+    }
+    .bento-menu span:nth-child(2) {
+    	top: 0;
+    	left: 20px;
+        background-color: #FFCE99;
+    }
+    .bento-menu span:nth-child(3) {
+    	top: 0;
+    	left: 40px;
+        background-color: #FFF7A2;
+    }
+    .bento-menu span:nth-child(4) {
+    	top: 20px;
+    	left: 0;
+        background-color: #DDFFA9;
+    }
+    .bento-menu span:nth-child(5) {
+    	top: 20px;
+    	left: 20px;
+        background-color: #C9FFF1;
+    }
+    .bento-menu span:nth-child(6) {
+    	top: 20px;
+    	left: 40px;
+        background-color: #C2E8FB;
+    }
+    .bento-menu span:nth-child(7) {
+    	top: 40px;
+    	left: 0;
+        background-color: #CADAFE;
+    }
+    .bento-menu span:nth-child(8) {
+    	top: 40px;
+    	left: 20px;
+        background-color: #D9BDED;
+    }
+    .bento-menu span:nth-child(9) {
+    	top: 40px;
+    	left: 40px;
+        background-color: #FEB2D0;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 350px;
+        position: fixed;
+        z-index: 3000;
+        top: 0;
+        right: -350px;
+        background-color: white;
+        overflow-y: hidden;
+        transition: 0.5s;
+        padding-top: 50px;
+        /*display: none;*/
+    }
+    .category {
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .closebtn {
+        color: black;
+        font-size: 40px;
+    }
+    .dropdown-btn {
+        display: block;
+        padding: 10px 18px 10px 18px;
+        background: white;
+        color: black;
+        position: relative;
+        font-size: 28px;
+        text-decoration: none;
+    } 
+    .dropdown-btn #iconsMenu {
+        margin-right: 15px;
+        font-size: 28px;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        margin-left: 50px;
+        text-decoration: none;
+    }
+    .dropdown-container {
+        background-color: white;
+        max-height: 0px;
+        transition: max-height 0.3s;
+        overflow: hidden;
+    }
+    .dropdown-container .dropdown-links {
+        display: block;
+        padding: 10px 60px;
+        color: black;
+        margin: 4px 0px;
+        position: relative;
+        font-size: 23px;
+        text-decoration: none;
+    }
+    .category:target .dropdown-container {
+        max-height: 9em;
+    }
+    li:nth-of-type(1):active .dropdown-btn {
+        background: #FFADAE;
+    }
+    li:nth-of-type(2):active .dropdown-btn {
+        background: #FFCE99;
+    }
+    li:nth-of-type(3):active .dropdown-btn {
+        background: #FFF7A2;
+    }
+    li:nth-of-type(4):active .dropdown-btn {
+        background: #DDFFA9;
+    }
+    li:nth-of-type(5):active .dropdown-btn {
+        background: #C9FFF1;
+    }
+    li:nth-of-type(6):active .dropdown-btn {
+        background: #C2E8FB;
+    }
+    li:nth-of-type(7):active .dropdown-btn {
+        background: #CADAFE;
+    }
+    li:nth-of-type(8):active .dropdown-btn {
+        background: #D9BDED;
+    }
+    li:nth-of-type(9):active .dropdown-btn {
+        background: #FEB2D0;
+    }
+    /*
+    .category:target .dropdown-btn {
+        background: black;
+    }
+    */
+    .fa-newspaper, .fa-app-store, .fa-search, .fa-barcode, .fa-shopping-cart, .fa-search-plus, .fa-user-friends, .fa-address-card, .fa-plus-circle {
+        float: left;
+        padding-top: 6px;
+    }
+    .CategoryRed {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFADAE;
+        margin: 0px 100px 300px 100px;
+        border-radius: 5px;
+    }
+    .CategoryOrange {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFCE99;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryYellow {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFF7A2;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryGolden {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #DDFFA9;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryLightGreen {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C9FFF1;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryLightBlue {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C2E8FB;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryLavender {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #CADAFE;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryViolet {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #D9BDED;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    .CategoryPink {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FEB2D0;
+        margin: 0px 200px 50px 200px;
+        border-radius: 5px;
+    }
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /*Remove borders */
+        outline: none; /*Remove outline */
+        background-color: white; /*Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover  */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 40px; /* Increase font size */
+    }
+    .fa-arrow-alt-circle-up {
+        color: red;
+        font-size: 60px; /* Increase font size */
+    }
+    .icon-bar {
+        position: relative;
+        bottom: -40px;
+        width: 100%;
+        /*text-align: center;*/
+        padding-left: 15px;
+    }
+    .socialSite {
+        color: white;
+        display: inline-block;
+        padding: 20px;
+        border-radius: 50%;
+    }
+    .fa-facebook, .fa-twitter, .fa-linkedin-in {
+        font-size: 30px;
+        color: #333333;
+    }
+    .icon-bar a {
+        background: #cccccc;
+    }
+}
+
+/* iPads LANDSCAPE */
+@media only screen and (min-width: 810px) and (max-width: 1280px) and (orientation: landscape) {
+    html {
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    #nav-bar {
+        background-color: white;
+        padding-bottom: 10px;
+        overflow: hidden;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .allerio-logo {
+        height: 95px;
+        width: 140px;
+    }
+    #nav-bar .allerio-logo {
+        margin-top: 10px;
+        margin-left: 90px;
+    }
+    /*
+    .menu-btn {
+        float: right;
+        font-size: 40px;
+        margin-right: 200px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    */
+    #nav-bar .bento-positioning {
+        position: relative;
+        float: right;
+        margin-right: 155px;
+        margin-top: 30px;
+        border: none;
+        outline: none;
+    }
+    .bento-menu {
+        width: 55px;
+        height: 55px;
+        top: 10%;
+        left: 25%;
+        position: absolute;
+        cursor: pointer;
+    }
+    .bento-dot {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+    .bento-menu span:nth-child(1) {
+        top: 0;
+        left: 0;
+        background-color: #FFADAE;
+    }
+    .bento-menu span:nth-child(2) {
+    	top: 0;
+    	left: 20px;
+        background-color: #FFCE99;
+    }
+    .bento-menu span:nth-child(3) {
+    	top: 0;
+    	left: 40px;
+        background-color: #FFF7A2;
+    }
+    .bento-menu span:nth-child(4) {
+    	top: 20px;
+    	left: 0;
+        background-color: #DDFFA9;
+    }
+    .bento-menu span:nth-child(5) {
+    	top: 20px;
+    	left: 20px;
+        background-color: #C9FFF1;
+    }
+    .bento-menu span:nth-child(6) {
+    	top: 20px;
+    	left: 40px;
+        background-color: #C2E8FB;
+    }
+    .bento-menu span:nth-child(7) {
+    	top: 40px;
+    	left: 0;
+        background-color: #CADAFE;
+    }
+    .bento-menu span:nth-child(8) {
+    	top: 40px;
+    	left: 20px;
+        background-color: #D9BDED;
+    }
+    .bento-menu span:nth-child(9) {
+    	top: 40px;
+    	left: 40px;
+        background-color: #FEB2D0;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 350px;
+        position: fixed;
+        z-index: 3000;
+        top: 0;
+        right: -350px;
+        background-color: white;
+        overflow-y: hidden;
+        transition: 0.5s;
+        padding-top: 50px;
+        /*display: none;*/
+    }
+    .category {
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .closebtn {
+        color: black;
+        font-size: 40px;
+    }
+    .dropdown-btn {
+        display: block;
+        padding: 10px 18px 10px 18px;
+        background: white;
+        color: black;
+        position: relative;
+        font-size: 25px;
+        text-decoration: none;
+    } 
+    .dropdown-btn #iconsMenu {
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        margin-left: 50px;
+        text-decoration: none;
+    }
+    .dropdown-container {
+        background-color: white;
+        max-height: 0px;
+        transition: max-height 0.3s;
+        overflow: hidden;
+    }
+    .dropdown-container .dropdown-links {
+        display: block;
+        padding: 10px 60px;
+        color: black;
+        margin: 4px 0px;
+        position: relative;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .category:target .dropdown-container {
+        max-height: 9em;
+    }
+    li:nth-of-type(1):active .dropdown-btn {
+        background: #FFADAE;
+    }
+    li:nth-of-type(2):active .dropdown-btn {
+        background: #FFCE99;
+    }
+    li:nth-of-type(3):active .dropdown-btn {
+        background: #FFF7A2;
+    }
+    li:nth-of-type(4):active .dropdown-btn {
+        background: #DDFFA9;
+    }
+    li:nth-of-type(5):active .dropdown-btn {
+        background: #C9FFF1;
+    }
+    li:nth-of-type(6):active .dropdown-btn {
+        background: #C2E8FB;
+    }
+    li:nth-of-type(7):active .dropdown-btn {
+        background: #CADAFE;
+    }
+    li:nth-of-type(8):active .dropdown-btn {
+        background: #D9BDED;
+    }
+    li:nth-of-type(9):active .dropdown-btn {
+        background: #FEB2D0;
+    }
+    /*
+    .category:target .dropdown-btn {
+        background: black;
+    }
+    */
+    .fa-newspaper, .fa-app-store, .fa-search, .fa-barcode, .fa-shopping-cart, .fa-search-plus, .fa-user-friends, .fa-address-card, .fa-plus-circle {
+        float: left;
+        padding-top: 6px;
+    }
+    .CategoryRed {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFADAE;
+        margin: 0px 100px 75px 100px;
+        border-radius: 5px;
+    }
+    .CategoryOrange {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFCE99;
+        margin: 0px 100px 75px 100px;
+        border-radius: 5px;
+    }
+    .CategoryYellow {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFF7A2;
+        margin: 0px 100px 75px 100px;
+        border-radius: 5px;
+    }
+    .CategoryGolden {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #DDFFA9;
+        margin: 0px 100px 75px 100px;
+        border-radius: 5px;
+    }
+    .CategoryLightGreen {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C9FFF1;
+        margin: 0px 100px 75px 100px;
+        border-radius: 5px;
+    }
+    .CategoryLightBlue {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C2E8FB;
+        margin: 0px 100px 75px 100px;
+        border-radius: 5px;
+    }
+    .CategoryLavender {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #CADAFE;
+        margin: 0px 100px 75px 100px;
+        border-radius: 5px;
+    }
+    .CategoryViolet {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #D9BDED;
+        margin: 0px 100px 75px 100px;
+        border-radius: 5px;
+    }
+    .CategoryPink {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FEB2D0;
+        margin: 0px 100px 75px 100px;
+        border-radius: 5px;
+    }
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /*Remove borders */
+        outline: none; /*Remove outline */
+        background-color: white; /*Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover  */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 40px; /* Increase font size */
+    }
+    .fa-arrow-alt-circle-up {
+        color: red;
+        font-size: 60px; /* Increase font size */
+    }
+    .icon-bar {
+        position: relative;
+        bottom: -40px;
+        width: 100%;
+        /*text-align: center;*/
+        padding-left: 15px;
+    }
+    .socialSite {
+        color: white;
+        display: inline-block;
+        padding: 20px;
+        border-radius: 50%;
+    }
+    .fa-facebook, .fa-twitter, .fa-linkedin-in {
+        font-size: 30px;
+        color: #333333;
+    }
+    .icon-bar a {
+        background: #cccccc;
+    }
+}
+
+/* Laptop, iPads, Desktop */
+@media (min-width: 1281px) {
+    html {
+        list-style: none;
+        text-decoration: none;
+        font-family: 'Quicksand', sans-serif;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    #nav-bar {
+        background-color: white;
+        padding-bottom: 10px;
+        overflow: hidden;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .allerio-logo {
+        height: 100px;
+        width: 150px;
+    }
+    #nav-bar .allerio-logo {
+        margin-top: 10px;
+        margin-left: 190px;
+    }
+    /*
+    .menu-btn {
+        float: right;
+        font-size: 40px;
+        margin-right: 200px;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    */
+    #nav-bar .bento-positioning {
+        position: relative;
+        float: right;
+        margin-right: 255px;
+        margin-top: 30px;
+        border: none;
+        outline: none;
+    }
+    .bento-menu {
+        width: 55px;
+        height: 55px;
+        top: 10%;
+        left: 25%;
+        position: absolute;
+        cursor: pointer;
+    }
+    .bento-dot {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
+    .bento-menu span:nth-child(1) {
+        top: 0;
+        left: 0;
+        background-color: #FFADAE;
+    }
+    .bento-menu span:nth-child(2) {
+    	top: 0;
+    	left: 20px;
+        background-color: #FFCE99;
+    }
+    .bento-menu span:nth-child(3) {
+    	top: 0;
+    	left: 40px;
+        background-color: #FFF7A2;
+    }
+    .bento-menu span:nth-child(4) {
+    	top: 20px;
+    	left: 0;
+        background-color: #DDFFA9;
+    }
+    .bento-menu span:nth-child(5) {
+    	top: 20px;
+    	left: 20px;
+        background-color: #C9FFF1;
+    }
+    .bento-menu span:nth-child(6) {
+    	top: 20px;
+    	left: 40px;
+        background-color: #C2E8FB;
+    }
+    .bento-menu span:nth-child(7) {
+    	top: 40px;
+    	left: 0;
+        background-color: #CADAFE;
+    }
+    .bento-menu span:nth-child(8) {
+    	top: 40px;
+    	left: 20px;
+        background-color: #D9BDED;
+    }
+    .bento-menu span:nth-child(9) {
+    	top: 40px;
+    	left: 40px;
+        background-color: #FEB2D0;
+    }
+    
+    .sidenav {
+        height: 100%;
+        width: 350px;
+        position: fixed;
+        z-index: 3000;
+        top: 0;
+        right: -350px;
+        background-color: white;
+        overflow-y: hidden;
+        transition: 0.5s;
+        padding-top: 50px;
+        /*display: none;*/
+    }
+    .category {
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .closebtn {
+        color: black;
+        font-size: 40px;
+    }
+    .dropdown-btn {
+        display: block;
+        padding: 10px 18px 10px 18px;
+        background: white;
+        color: black;
+        position: relative;
+        font-size: 25px;
+        text-decoration: none;
+    } 
+    .dropdown-btn #iconsMenu {
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        margin-left: 50px;
+        text-decoration: none;
+    }
+    .dropdown-container {
+        background-color: white;
+        max-height: 0px;
+        transition: max-height 0.3s;
+        overflow: hidden;
+    }
+    .dropdown-container .dropdown-links {
+        display: block;
+        padding: 10px 60px;
+        color: black;
+        margin: 4px 0px;
+        position: relative;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .category:target .dropdown-container {
+        max-height: 9em;
+    }
+    li:nth-of-type(1):active .dropdown-btn {
+        background: #FFADAE;
+    }
+    li:nth-of-type(2):active .dropdown-btn {
+        background: #FFCE99;
+    }
+    li:nth-of-type(3):active .dropdown-btn {
+        background: #FFF7A2;
+    }
+    li:nth-of-type(4):active .dropdown-btn {
+        background: #DDFFA9;
+    }
+    li:nth-of-type(5):active .dropdown-btn {
+        background: #C9FFF1;
+    }
+    li:nth-of-type(6):active .dropdown-btn {
+        background: #C2E8FB;
+    }
+    li:nth-of-type(7):active .dropdown-btn {
+        background: #CADAFE;
+    }
+    li:nth-of-type(8):active .dropdown-btn {
+        background: #D9BDED;
+    }
+    li:nth-of-type(9):active .dropdown-btn {
+        background: #FEB2D0;
+    }
+    .fa-newspaper, .fa-app-store, .fa-search, .fa-barcode, .fa-shopping-cart, .fa-search-plus, .fa-user-friends, .fa-address-card, .fa-plus-circle {
+        float: left;
+        padding-top: 6px;
+    }
+    .CategoryRed {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFADAE;
+        margin: 0px 200px 75px 200px;
+        border-radius: 5px;
+    }
+    .CategoryOrange {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFCE99;
+        margin: 0px 200px 75px 200px;
+        border-radius: 5px;
+    }
+    .CategoryYellow {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FFF7A2;
+        margin: 0px 200px 75px 200px;
+        border-radius: 5px;
+    }
+    .CategoryGolden {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #DDFFA9;
+        margin: 0px 200px 75px 200px;
+        border-radius: 5px;
+    }
+    .CategoryLightGreen {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C9FFF1;
+        margin: 0px 200px 75px 200px;
+        border-radius: 5px;
+    }
+    .CategoryLightBlue {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #C2E8FB;
+        margin: 0px 200px 75px 200px;
+        border-radius: 5px;
+    }
+    .CategoryLavender {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #CADAFE;
+        margin: 0px 200px 75px 200px;
+        border-radius: 5px;
+    }
+    .CategoryViolet {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #D9BDED;
+        margin: 0px 200px 75px 200px;
+        border-radius: 5px;
+    }
+    .CategoryPink {
+        height: 5000px;
+        transform: translateY(50px);
+        background-color: #FEB2D0;
+        margin: 0px 200px 75px 200px;
+        border-radius: 5px;
+    }
+    #myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /*Remove borders */
+        outline: none; /*Remove outline */
+        background-color: white; /*Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover  */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 40px; /* Increase font size */
+    }
+    .fa-arrow-alt-circle-up {
+        color: red;
+        font-size: 60px; /* Increase font size */
+    }
+    .icon-bar {
+        position: relative;
+        bottom: -40px;
+        width: 100%;
+        /*text-align: center;*/
+        padding-left: 15px;
+    }
+    .socialSite {
+        color: white;
+        display: inline-block;
+        padding: 15px;
+        border-radius: 50%;
+    }
+    .fa-facebook, .fa-twitter, .fa-linkedin-in {
+        font-size: 20px;
+        color: #333333;
+    }
+    .icon-bar a {
+        background: #cccccc;
+    }
+}
+
+@keyframes bgcolor {
+        0% {background-color: #FFADAE;}
+        12% {background-color: #FFCE99;}
+        25% {background-color: #FFF7A2;}
+        37% {background-color: #DDFFA9;}
+        50% {background-color: #C9FFF1;}
+        62% {background-color: #C2E8FB;}
+        75% {background-color: #CADAFE;}
+        87% {background-color: #D9BDED;}
+        100% {background-color: #FEB2D0;}
+}
+
